@@ -134,4 +134,4 @@ gulp.task('watch', ['delWatch', 'browser-sync', 'css-libs', 'csv', 'img', 'views
 	gulp.watch('src/images/**/*', ['img'], browserSync.reload);
 });
 
-gulp.task('build', ['delWatch', 'browser-sync', 'css-libs', 'csv', 'img', 'views', 'mainjs', 'font', 'docs']);
+gulp.task('build', ['delWatch', 'css-libs', 'csv', 'img', 'views', 'mainjs', 'font', 'docs']);
