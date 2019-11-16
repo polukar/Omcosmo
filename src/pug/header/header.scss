@@ -1,0 +1,17 @@
+.header {
+  padding: 25px 56px 30px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__phone {
+  color: #6F6266;
+}
+.header__bg {
+  background-image: url("../images/header-phone.png");
+  width: 451px;
+  height: 430px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}

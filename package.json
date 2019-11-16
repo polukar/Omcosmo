@@ -37,6 +37,7 @@
     "gulp-pug": "^4.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-uglifyjs": "^0.6.2",
-    "slick": "^1.12.2"
+    "slick": "^1.12.2",
+    "zurb-twentytwenty": "^0.1.1"
   }
 }
