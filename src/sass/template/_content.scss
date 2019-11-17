@@ -213,7 +213,8 @@
   .scheme .btn-pink {
     background-color: #FFF2F7;
     color: #605458;
-    cursor: pointer; }
+    position: relative;
+    z-index: 2; }
   .scheme .btn-block {
     margin-top: -50px;
     text-align: center; }
@@ -375,4 +376,62 @@
     -webkit-flex-basis: 39%;
         -ms-flex-preferred-size: 39%;
             flex-basis: 39%; }
+
+.questions {
+  background-color: #FFF2F7;
+  padding-top: 37px; }
+  .questions .questions__bg {
+    background-image: url("../images/question.svg");
+    background-repeat: no-repeat;
+    background-position: right top; }
+  .questions p.question {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative; }
+    .questions p.question:before {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-left: 2px solid #ffffff;
+      border-bottom: 2px solid #ffffff;
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      -webkit-transform: translate(0, -50%) rotateZ(-45deg);
+          -ms-transform: translate(0, -50%) rotate(-45deg);
+              transform: translate(0, -50%) rotateZ(-45deg); }
+  .questions p.question.active:before {
+    -webkit-transform: translate(0, -50%) rotateZ(135deg);
+        -ms-transform: translate(0, -50%) rotate(135deg);
+            transform: translate(0, -50%) rotateZ(135deg); }
+  .questions h3 {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 40px; }
+  .questions .item-1, .questions .item-2 {
+    width: 824px; }
+  .questions .item-3 {
+    width: 953px; }
+  .questions .item-4 {
+    width: 1122px; }
+  .questions .question {
+    width: 100%;
+    padding: 14px 0 14px 40px;
+    background-color: #938086;
+    margin-bottom: 45px; }
+  .questions .question.active {
+    margin-bottom: 35px; }
+  .questions .answer {
+    padding-left: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6F6266;
+    margin-bottom: 20px; }
+  .questions .item-5 {
+    width: 100%; }
+    .questions .item-5 .question {
+      padding-right: 330px; }
 
