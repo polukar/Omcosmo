@@ -182,6 +182,7 @@ $white: #ffffff;
   .btn-pink {
     background-color: $bg;
     color: $text-color;
+    font-size: 16px;
     position: relative;
     z-index: 2;
   }
@@ -368,6 +369,7 @@ $white: #ffffff;
 .questions {
   background-color: $bg;
   padding-top: 37px;
+  padding-bottom: 35px;
   .questions__bg {
     background-image: url("../images/question.svg");
     background-repeat: no-repeat;
@@ -417,8 +419,10 @@ $white: #ffffff;
     background-color: $bg-dark;
     margin-bottom: 45px;
   }
-  .question.active {
-    margin-bottom: 35px;
+  .item-5 {
+    .question {
+      margin-bottom: 0;
+    }
   }
   .answer {
     padding-left: 40px;
@@ -433,5 +437,34 @@ $white: #ffffff;
     .question {
       padding-right: 330px;
     }
+  }
+}
+.map {
+  padding-bottom: 200px;
+  padding-top: 17px;
+  .map__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+  }
+  .address {
+    width: 278px;
+  }
+  .address, .phone {
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+  }
+  .btn-pink {
+    background-color: $bg;
+    padding: 12px 25px;
+    color: $text-color;
+    font-size: 16px;
+  }
+  iframe {
+    border: none;
+    width: 100%;
+    height: 563px;
   }
 }
