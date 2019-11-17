@@ -68,7 +68,13 @@ $white: #ffffff;
   border-radius: 4px;
   color: $text-color;
   cursor: pointer;
+  transition: .3s ease-in-out;
+  &:hover {
+    background-color: #938086;
+    color: $white;
+  }
 }
+
 .before-after {
   background-color: $bg;
   width: 100%;
@@ -185,6 +191,10 @@ $white: #ffffff;
     font-size: 16px;
     position: relative;
     z-index: 2;
+    &:hover {
+      background-color: #938086;
+      color: $white;
+    }
   }
   .btn-block {
     margin-top: -50px;
@@ -440,7 +450,6 @@ $white: #ffffff;
   }
 }
 .map {
-  padding-bottom: 200px;
   padding-top: 17px;
   .map__header {
     display: flex;
@@ -461,10 +470,16 @@ $white: #ffffff;
     padding: 12px 25px;
     color: $text-color;
     font-size: 16px;
+    &:hover {
+      background-color: #938086;
+      color: $white;
+    }
   }
   iframe {
     border: none;
     width: 100%;
     height: 563px;
+    padding: 0;
+    margin-bottom: -3px;
   }
 }

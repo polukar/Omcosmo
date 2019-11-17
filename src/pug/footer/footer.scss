@@ -1,3 +1,29 @@
+$text-color: #605458;
+$text-color-dark: #6F6266;
+$bg: #FFF2F7;
+$bg-dark: #938086;
+$white: #ffffff;
 
+.footer {
+  padding-top: 20px;
+  background-color: $bg;
+  .logo-phone {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #6F6266;
+  }
+  img {
+    margin-bottom: 11px;
+  }
+  p {
+    margin-bottom: 5px;
+  }
+  .btn {
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+}
 
 
