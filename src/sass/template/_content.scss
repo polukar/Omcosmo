@@ -1,6 +1,6 @@
 
 .header {
-  padding: 25px 56px 30px 40px;
+  padding: 10px 56px 30px 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11,7 +11,8 @@
           justify-content: space-between; }
 
 .header__phone {
-  color: #6F6266; }
+  color: #6F6266;
+  margin-top: 15px; }
 
 .header__bg {
   background-image: url("../images/header-phone.png");
@@ -24,8 +25,8 @@
 
 .main__fist-screen {
   border: 1px solid green;
-  min-height: -webkit-calc(100vh - 165px);
-  min-height: calc(100vh - 165px);
+  min-height: -webkit-calc(100vh - 145px);
+  min-height: calc(100vh - 145px);
   background-image: url("../images/main.png");
   background-position: right;
   -webkit-background-size: contain;
