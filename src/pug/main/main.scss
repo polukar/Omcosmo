@@ -179,6 +179,15 @@ $white: #ffffff;
     text-align: center;
     margin-bottom: 31px;
   }
+  .btn-pink {
+    background-color: $bg;
+    color: $text-color;
+    cursor: pointer;
+  }
+  .btn-block {
+    margin-top: -50px;
+    text-align: center;
+  }
 }
 .work {
   display: flex;
@@ -236,5 +245,125 @@ $white: #ffffff;
   }
   .item3 {
     width: 293px;
+  }
+}
+
+.compare {
+  padding-top: 110px;
+  padding-bottom: 40px;
+  h3 {
+    text-align: center;
+  }
+  p {
+    position: relative;
+    padding-left: 30px;
+    color: #A79298;
+    margin-bottom: 85px;
+  }
+  .my-clinic {
+    p:last-child {
+      margin-bottom: 0;
+    }
+    p:nth-child(1){
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 50px;
+      &:after {
+        content: '';
+        display: block;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: #F8E7ED;
+        position: absolute;
+        left: 4px;
+        top: 4px;
+      }
+      &:before {
+        content: '';
+        display: block;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        border: 1px solid #F8E7ED;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    p {
+      &:after {
+        content: '';
+        display: block;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: #F8E7ED;
+        position: absolute;
+        left: 4px;
+        top: 4px;
+      }
+    }
+  }
+  .other-clinic {
+    p:last-child {
+      margin-bottom: 0;
+    }
+    p:nth-child(1){
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 50px;
+      &:after {
+        content: '';
+        display: block;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: #A79298;
+        position: absolute;
+        left: 4px;
+        top: 4px;
+      }
+      &:before {
+        content: '';
+        display: block;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        border: 1px solid #A79298;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    p {
+      &:after {
+        content: '';
+        display: block;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: #A79298;
+        position: absolute;
+        left: 4px;
+        top: 4px;
+      }
+    }
+  }
+  .compare__clinic {
+    background-image: url("../images/libra.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    display: flex;
+    justify-content: space-between;
+  }
+  .my-clinic {
+    flex-basis: 46%;
+  }
+  .other-clinic {
+    flex-basis: 39%;
+  }
+  .other-clinic {
+    //padding-left: 30px;
   }
 }
