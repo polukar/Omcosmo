@@ -8,22 +8,54 @@ $white: #ffffff;
   padding-top: 20px;
   background-color: $bg;
   .logo-phone {
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 16px;
-    color: #6F6266;
+    a {
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #6F6266;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
   }
   img {
     margin-bottom: 11px;
   }
-  p {
-    margin-bottom: 5px;
+  .phone-link {
+    display: block;
   }
+
   .btn {
     font-weight: 300;
     font-size: 16px;
+    margin-bottom: 24px;
   }
-
+  .footer-big {
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    .icon-block {
+      text-align: center;
+      a {
+        margin-right: 3px;
+        margin-left: 3px;
+      }
+    }
+  }
+  .footer-small {
+    display: flex;
+    justify-content: center;
+    background-color: $bg-dark;
+    align-items: center;
+    height: 38px;
+    a {
+      color: $white;
+      font-size: 14px;
+      line-height: 17px;
+      text-decoration: none;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
 }
 
 

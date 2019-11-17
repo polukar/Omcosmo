@@ -1,18 +1,58 @@
 .footer {
   padding-top: 20px;
   background-color: #FFF2F7; }
-  .footer .logo-phone {
+  .footer .logo-phone a {
     font-weight: 300;
     font-size: 13px;
     line-height: 16px;
-    color: #6F6266; }
+    color: #6F6266;
+    text-decoration: none;
+    margin-bottom: 5px; }
   .footer img {
     margin-bottom: 11px; }
-  .footer p {
-    margin-bottom: 5px; }
+  .footer .phone-link {
+    display: block; }
   .footer .btn {
     font-weight: 300;
-    font-size: 16px; }
+    font-size: 16px;
+    margin-bottom: 24px; }
+  .footer .footer-big {
+    padding-bottom: 25px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .footer .footer-big .icon-block {
+      text-align: center; }
+      .footer .footer-big .icon-block a {
+        margin-right: 3px;
+        margin-left: 3px; }
+  .footer .footer-small {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #938086;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 38px; }
+    .footer .footer-small a {
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 17px;
+      text-decoration: none;
+      margin-left: 10px;
+      margin-right: 10px; }
 
 .header {
   padding: 10px 56px 30px 40px;
@@ -28,6 +68,12 @@
 .header__phone {
   color: #6F6266;
   margin-top: 15px; }
+  .header__phone a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6F6266;
+    text-decoration: none; }
 
 .header__bg {
   background-image: url("../images/header-phone.png");
