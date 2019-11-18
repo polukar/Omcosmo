@@ -4,7 +4,7 @@ $bg: #FFF2F7;
 $bg-dark: #938086;
 $white: #ffffff;
 
-.servisec {
+.services {
   .cards {
     display: flex;
     flex-wrap: wrap;
@@ -55,4 +55,39 @@ $white: #ffffff;
       margin-right: 10px;
     }
   }
+}
+.services__description {
+  text-align: center;
+  display: none;
+  .name-service {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .detail-service {
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .cards {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1200px){
+  .services__description {
+    display: block;
+  }
+}
+@media screen and (max-width: 425px){
+  .services {
+    .card-item {
+      flex-basis: 100%;
+      min-width: auto;
+      width: 100%;
+    }
+  }
+
 }

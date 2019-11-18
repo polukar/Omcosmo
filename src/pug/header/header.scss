@@ -78,9 +78,6 @@
   }
 }
 
-
-
-
 @media screen and (max-width: 1200px){
   .mobile-menu {
     display: block;
@@ -90,5 +87,13 @@
   }
   .header {
     padding: 15px 15px 15px 0;
+  }
+  .header__description {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px){
+  .header__bg {
+    width: 345px;
   }
 }
