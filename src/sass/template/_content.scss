@@ -1,64 +1,3 @@
-.header {
-  padding: 10px 56px 30px 23px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.header__phone {
-  color: #6F6266;
-  margin-top: 15px; }
-  .header__phone a {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #6F6266;
-    text-decoration: none; }
-
-.header__bg {
-  background-image: url("../images/header-phone.png");
-  width: 451px;
-  height: 430px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1; }
-
-.mobile-menu {
-  display: none;
-  width: 40px;
-  height: 40px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  background-color: #fff;
-  margin-top: 35px; }
-
-.mobile-btn span {
-  display: block;
-  width: 25px;
-  height: 2px;
-  background-color: #938086;
-  margin: 0 auto; }
-
-.mobile-btn span:nth-child(1) {
-  margin-bottom: 5px;
-  margin-top: 12px; }
-
-.mobile-btn span:nth-child(2) {
-  margin-bottom: 5px; }
-
-@media screen and (max-width: 1200px) {
-  .mobile-menu {
-    display: block; }
-  .header__phone {
-    display: none; }
-  .header {
-    padding: 15px 15px 15px 0; } }
-
 .footer {
   padding-top: 20px;
   background-color: #FFF2F7; }
@@ -127,6 +66,67 @@
   .footer .footer-big {
     display: block;
     text-align: center; } }
+
+.header {
+  padding: 10px 56px 30px 23px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.header__phone {
+  color: #6F6266;
+  margin-top: 15px; }
+  .header__phone a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6F6266;
+    text-decoration: none; }
+
+.header__bg {
+  background-image: url("../images/header-phone.png");
+  width: 451px;
+  height: 430px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1; }
+
+.mobile-menu {
+  display: none;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #fff;
+  margin-top: 35px; }
+
+.mobile-btn span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #938086;
+  margin: 0 auto; }
+
+.mobile-btn span:nth-child(1) {
+  margin-bottom: 5px;
+  margin-top: 12px; }
+
+.mobile-btn span:nth-child(2) {
+  margin-bottom: 5px; }
+
+@media screen and (max-width: 1200px) {
+  .mobile-menu {
+    display: block; }
+  .header__phone {
+    display: none; }
+  .header {
+    padding: 15px 15px 15px 0; } }
 
 .main__fist-screen {
   min-height: -webkit-calc(100vh - 145px);
@@ -795,4 +795,61 @@
     margin-bottom: 20px; }
   .map .btn-block {
     margin-bottom: 20px; } }
+
+.servisec .cards {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.servisec .card-item {
+  -webkit-flex-basis: 32%;
+      -ms-flex-preferred-size: 32%;
+          flex-basis: 32%;
+  min-width: 390px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-bottom: 82px; }
+  .servisec .card-item .btn {
+    font-weight: normal;
+    font-size: 15px; }
+
+.servisec .description {
+  background-color: #FFF2F7;
+  width: 100%;
+  padding: 22px 10px 30px; }
+  .servisec .description .btn-block {
+    text-align: center;
+    margin-top: 30px; }
+  .servisec .description h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 9px; }
+  .servisec .description h4 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 17px;
+    margin-bottom: 25px; }
+  .servisec .description p {
+    font-weight: normal;
+    font-size: 17px; }
+
+.servisec .equipment,
+.servisec .code,
+.servisec .doctor {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 10px; }
+  .servisec .equipment p:nth-child(1),
+  .servisec .code p:nth-child(1),
+  .servisec .doctor p:nth-child(1) {
+    margin-right: 10px; }
 
