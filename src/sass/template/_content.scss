@@ -76,7 +76,19 @@
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .header .name-service {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 25px; }
+  .header .detail-service {
+    font-weight: 500;
+    font-size: 25px; }
 
 .header__phone {
   color: #6F6266;
@@ -87,6 +99,9 @@
     line-height: 20px;
     color: #6F6266;
     text-decoration: none; }
+
+.header__description {
+  text-align: center; }
 
 .header__bg {
   background-image: url("../images/header-phone.png");
@@ -104,7 +119,19 @@
   -webkit-border-radius: 50%;
           border-radius: 50%;
   background-color: #fff;
-  margin-top: 35px; }
+  margin-top: 35px;
+  cursor: pointer; }
+
+.mobile-menu-inside {
+  display: block;
+  cursor: pointer; }
+  .mobile-menu-inside .mobile-btn span {
+    width: 35px;
+    height: 5px;
+    -webkit-border-radius: 10px;
+            border-radius: 10px; }
+  .mobile-menu-inside .mobile-btn span:nth-child(2) {
+    height: 4px; }
 
 .mobile-btn span {
   display: block;
@@ -114,11 +141,11 @@
   margin: 0 auto; }
 
 .mobile-btn span:nth-child(1) {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   margin-top: 12px; }
 
 .mobile-btn span:nth-child(2) {
-  margin-bottom: 5px; }
+  margin-bottom: 4px; }
 
 @media screen and (max-width: 1200px) {
   .mobile-menu {
@@ -796,6 +823,7 @@
   .map .btn-block {
     margin-bottom: 20px; } }
 
+
 .servisec .cards {
   display: -webkit-box;
   display: -webkit-flex;
@@ -852,4 +880,3 @@
   .servisec .code p:nth-child(1),
   .servisec .doctor p:nth-child(1) {
     margin-right: 10px; }
-
