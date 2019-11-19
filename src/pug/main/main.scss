@@ -779,3 +779,122 @@ $white: #ffffff;
     }
   }
 }
+
+//About
+.about {
+  .pink-line {
+    width: calc((100vw - 1255px) / 2);
+    position: absolute;
+    height: calc(100% - 328px);
+    background-color: $bg;
+  }
+  .about__headline {
+    position: relative;
+  }
+  h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 35px;
+    padding-bottom: 50px;
+    span {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 50px;
+    }
+  }
+  .description {
+    width: 1020px;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 102px;
+    .description__headline {
+      width: 962px;
+      margin: 0 auto;
+      margin-bottom: 29px;
+    }
+    h2 {
+    }
+  }
+  .description__line {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 18px;
+  }
+  .bg-up {
+    width: 154px;
+    height: 147px;
+    background-image: url("../images/up-about.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .bg-down {
+    width: 154px;
+    height: 147px;
+    background-image: url("../images/down-about.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .warranty__items {
+    display: flex;
+    justify-content: space-between;
+    .item {
+      background-color: $bg-dark;
+      padding: 15px;
+      color: $white;
+      flex-basis: 32%;
+      h4 {
+        font-weight: 500;
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .about-clinic {
+    padding-top: 102px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    h2 {
+      margin-bottom: 70px;
+    }
+    .about-clinic__description {
+      width: 886px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 22px;
+      text-indent: 20px;
+      p {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+.license {
+  position: relative;
+  z-index: 3;
+  background-color: $white;
+  padding-top: 32px;
+  h2 {
+    margin-bottom: 126px;
+    text-align: center;
+  }
+}
+.license__items {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  .item {
+    width: 479px;
+    height: 695px;
+    background: $bg-dark;
+    border-radius: 7px;
+  }
+}

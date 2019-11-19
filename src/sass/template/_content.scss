@@ -1,97 +1,3 @@
-.header {
-  padding: 10px 56px 30px 23px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .header .name-service {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 30px;
-    margin-bottom: 25px; }
-  .header .detail-service {
-    font-weight: 500;
-    font-size: 25px; }
-
-.header__phone {
-  color: #6F6266;
-  margin-top: 15px; }
-  .header__phone a {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #6F6266;
-    text-decoration: none; }
-
-.header__description {
-  text-align: center; }
-
-.header__bg {
-  background-image: url("../images/header-phone.png");
-  width: 451px;
-  height: 430px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1; }
-
-.mobile-menu {
-  display: none;
-  width: 40px;
-  height: 40px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  background-color: #fff;
-  margin-top: 35px;
-  cursor: pointer; }
-
-.mobile-menu-inside {
-  display: block;
-  cursor: pointer; }
-  .mobile-menu-inside .mobile-btn span {
-    width: 35px;
-    height: 5px;
-    -webkit-border-radius: 10px;
-            border-radius: 10px; }
-  .mobile-menu-inside .mobile-btn span:nth-child(2) {
-    height: 4px; }
-
-.mobile-btn span {
-  display: block;
-  width: 25px;
-  height: 2px;
-  background-color: #938086;
-  margin: 0 auto; }
-
-.mobile-btn span:nth-child(1) {
-  margin-bottom: 4px;
-  margin-top: 12px; }
-
-.mobile-btn span:nth-child(2) {
-  margin-bottom: 4px; }
-
-@media screen and (max-width: 1200px) {
-  .mobile-menu {
-    display: block; }
-  .header__phone {
-    display: none; }
-  .header {
-    padding: 15px 15px 15px 0; }
-  .header__description {
-    display: none; } }
-
-@media screen and (max-width: 425px) {
-  .header__bg {
-    width: 345px; } }
-
 .footer {
   padding-top: 20px;
   background-color: #FFF2F7; }
@@ -160,6 +66,99 @@
   .footer .footer-big {
     display: block;
     text-align: center; } }
+
+.header {
+  padding: 10px 56px 30px 23px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .header .name-service {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 25px; }
+  .header .detail-service {
+    font-weight: 500;
+    font-size: 25px; }
+
+.header__phone {
+  color: #6F6266; }
+  .header__phone a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6F6266;
+    text-decoration: none; }
+
+.header__description {
+  text-align: center; }
+
+.header__bg {
+  background-image: url("../images/header-phone.png");
+  width: 451px;
+  height: 430px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1; }
+
+.mobile-menu {
+  display: none;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #fff;
+  margin-top: 35px;
+  cursor: pointer; }
+
+.mobile-menu-inside {
+  display: block;
+  cursor: pointer; }
+  .mobile-menu-inside .mobile-btn span {
+    width: 35px;
+    height: 5px;
+    -webkit-border-radius: 10px;
+            border-radius: 10px; }
+  .mobile-menu-inside .mobile-btn span:nth-child(2) {
+    height: 4px; }
+
+.mobile-btn span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #938086;
+  margin: 0 auto; }
+
+.mobile-btn span:nth-child(1) {
+  margin-bottom: 4px;
+  margin-top: 12px; }
+
+.mobile-btn span:nth-child(2) {
+  margin-bottom: 4px; }
+
+@media screen and (max-width: 1200px) {
+  .mobile-menu {
+    display: block; }
+  .header__phone {
+    display: none; }
+  .header {
+    padding: 15px 15px 15px 0; }
+  .header__description {
+    display: none; } }
+
+@media screen and (max-width: 425px) {
+  .header__bg {
+    width: 345px; } }
 
 .main__fist-screen {
   min-height: -webkit-calc(100vh - 145px);
@@ -829,6 +828,134 @@
   .map .btn-block {
     margin-bottom: 20px; } }
 
+.about .pink-line {
+  width: -webkit-calc((100vw - 1255px) / 2);
+  width: calc((100vw - 1255px) / 2);
+  position: absolute;
+  height: -webkit-calc(100% - 328px);
+  height: calc(100% - 328px);
+  background-color: #FFF2F7; }
+
+.about .about__headline {
+  position: relative; }
+
+.about h1 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 35px;
+  padding-bottom: 50px; }
+  .about h1 span {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px; }
+
+.about .description {
+  width: 1020px;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 102px; }
+  .about .description .description__headline {
+    width: 962px;
+    margin: 0 auto;
+    margin-bottom: 29px; }
+
+.about .description__line {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 18px; }
+
+.about .bg-up {
+  width: 154px;
+  height: 147px;
+  background-image: url("../images/up-about.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.about .bg-down {
+  width: 154px;
+  height: 147px;
+  background-image: url("../images/down-about.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.about .warranty__items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .about .warranty__items .item {
+    background-color: #938086;
+    padding: 15px;
+    color: #ffffff;
+    -webkit-flex-basis: 32%;
+        -ms-flex-preferred-size: 32%;
+            flex-basis: 32%; }
+    .about .warranty__items .item h4 {
+      font-weight: 500;
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 20px; }
+
+.about .about-clinic {
+  padding-top: 102px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.6);
+  margin: 0; }
+  .about .about-clinic h2 {
+    margin-bottom: 70px; }
+  .about .about-clinic .about-clinic__description {
+    width: 886px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 22px;
+    text-indent: 20px; }
+    .about .about-clinic .about-clinic__description p {
+      margin-bottom: 50px; }
+
+.license {
+  position: relative;
+  z-index: 3;
+  background-color: #ffffff;
+  padding-top: 32px; }
+  .license h2 {
+    margin-bottom: 126px;
+    text-align: center; }
+
+.license__items {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .license__items .item {
+    width: 479px;
+    height: 695px;
+    background: #938086;
+    -webkit-border-radius: 7px;
+            border-radius: 7px; }
+
+
 .services .cards {
   display: -webkit-box;
   display: -webkit-flex;
@@ -917,4 +1044,3 @@
             flex-basis: 100%;
     min-width: auto;
     width: 100%; } }
-
