@@ -142,13 +142,14 @@ $white: #ffffff;
   padding: 12px 36px;
   background-color: #fff;
   font-size: 18px;
-  border: none;
+  border: 1px solid #fff;
   border-radius: 4px;
   color: $text-color;
   cursor: pointer;
   transition: .3s ease-in-out;
   &:hover {
     background-color: #938086;
+    border: 1px solid #938086;
     color: $white;
   }
 }
@@ -202,7 +203,7 @@ $white: #ffffff;
   }
 }
 @media screen and (max-width: 1200px){
-  .before-after {
+  .before-after, .about__headline {
     .description {
       max-width: 90%;
     }
@@ -782,6 +783,9 @@ $white: #ffffff;
 
 //About
 .about {
+  .pink-bg {
+    background-color: $bg;
+  }
   .pink-line {
     width: calc((100vw - 1255px) / 2);
     position: absolute;
@@ -819,6 +823,7 @@ $white: #ffffff;
     display: flex;
     justify-content: space-between;
     padding-right: 18px;
+    align-items: center;
   }
   .bg-up {
     width: 154px;
@@ -843,12 +848,15 @@ $white: #ffffff;
   .warranty__items {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     .item {
       background-color: $bg-dark;
       padding: 15px;
       color: $white;
       flex-basis: 32%;
+      min-width: 391px;
       height: 741px;
+      margin-bottom: 40px;
       h4 {
         font-weight: 500;
         font-size: 22px;
@@ -892,15 +900,80 @@ $white: #ffffff;
   padding-right: 30px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   .item {
     width: 479px;
     height: 695px;
     background: $bg-dark;
     border-radius: 7px;
+    margin-bottom: 20px;
   }
 }
 .white-bg {
   position: relative;
   background-color: $white;
   z-index: 3;
+}
+.btn-white-border {
+  &:hover {
+    border: 1px solid $white;
+  }
+}
+@media screen and (max-width: 1200px){
+  .about {
+    .description {
+      .description__headline {
+        width: 100%;
+      }
+    }
+    .warranty__items {
+      justify-content: space-around;
+    }
+  }
+  .license__items {
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 968px) {
+  .about {
+    .about-clinic {
+      .about-clinic__description {
+        width: 100%;
+        padding-left: 15px;
+      }
+    }
+    .bg-up {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  .about {
+    .description__line {
+      padding: 10px;
+      }
+      .btn {
+        padding: 7px;
+        font-size: 16px;
+      }
+    }
+  }
+@media screen and (max-width: 425px){
+  .about {
+    .warranty__items {
+      .item {
+        min-width: 300px;
+        width: 100%;
+
+      }
+    }
+    .description__line {
+      p {
+        font-size: 18px;
+
+      }
+    }
+  }
 }
