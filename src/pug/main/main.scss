@@ -919,6 +919,13 @@ $white: #ffffff;
     border: 1px solid $white;
   }
 }
+@media screen and (max-width: 1900px){
+  .about {
+    .desktop-menu {
+      display: none;
+    }
+  }
+}
 @media screen and (max-width: 1200px){
   .about {
     .description {
@@ -977,10 +984,4 @@ $white: #ffffff;
     }
   }
 }
-@media screen and (min-width: 1920px){
-  .about {
-    .desktop-menu {
-      display: block;
-    }
-  }
-}
+
