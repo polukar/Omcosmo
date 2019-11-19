@@ -977,3 +977,10 @@ $white: #ffffff;
     }
   }
 }
+@media screen and (min-width: 1920px){
+  .about {
+    .desktop-menu {
+      display: block;
+    }
+  }
+}
