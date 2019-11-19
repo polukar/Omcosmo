@@ -955,6 +955,11 @@
     -webkit-border-radius: 7px;
             border-radius: 7px; }
 
+.white-bg {
+  position: relative;
+  background-color: #ffffff;
+  z-index: 3; }
+
 
 .services .cards {
   display: -webkit-box;

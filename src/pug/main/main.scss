@@ -898,3 +898,8 @@ $white: #ffffff;
     border-radius: 7px;
   }
 }
+.white-bg {
+  position: relative;
+  background-color: $white;
+  z-index: 3;
+}
