@@ -32,6 +32,10 @@ h1, h2, h3, h4, h5, h6, p {
 .container {
   width: 100%;
   max-width: 1255px;
-  padding-left: 15px;
-  padding-right: 15px;
+}
+@media screen and (max-width: 1255px){
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
