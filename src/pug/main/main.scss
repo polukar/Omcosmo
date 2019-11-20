@@ -1101,3 +1101,104 @@ $white: #ffffff;
     }
   }
 }
+
+
+.detail-doctors {
+  padding-bottom: 100px;
+  position: relative;
+  .pink-bg {
+    width: 100%;
+    height: 318px;
+    background-color: $bg;
+    position: absolute;
+    z-index: -1;
+  }
+  .detail-doctor{
+    margin-top: 50px;
+    position: relative;
+    .bg-up {
+      width: 154px;
+      height: 147px;
+      background-image: url("../images/up-about.png");
+      background-repeat: no-repeat;
+      background-position: left top;
+      position: absolute;
+      top: 318px;
+      left: calc((100vw - 1255px) / 2);
+      z-index: -1;
+    }
+    .description {
+      width: 720px;
+      height: 620px;
+      padding-bottom: 30px;
+      padding-top: 30px;
+      padding-left: 98px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: justify;
+      order: -1;
+      p {
+        margin-bottom: 20px;
+      }
+      .btn-block {
+        text-align: right;
+      }
+    }
+  }
+  .description-photo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .pink-line {
+    height: calc(100% - 28px);
+  }
+  .doctor-title {
+    text-align: center;
+    h2 {
+      margin-bottom: 5px;
+    }
+  }
+  .btn-pink {
+    background-color: $bg;
+    color: $text-color;
+    font-size: 15px;
+    &:hover {
+      background-color: #938086;
+      color: $white;
+    }
+  }
+}
+@media screen and (max-width: 1200px){
+  .detail-doctors {
+    .bg-up {
+      display: none;
+    }
+    .pink-bg {
+      height: 100%;
+    }
+    .description-photo {
+      display: block;
+    }
+    .detail-doctor {
+      .description {
+        width: 100%;
+        padding-left: 0;
+        .btn-block {
+          text-align: center;
+        }
+      }
+    }
+    .btn-pink {
+      background-color: $white;
+      color: $text-color;
+      font-size: 15px;
+      &:hover {
+        background-color: #938086;
+        color: $white;
+      }
+    }
+  }
+
+}
