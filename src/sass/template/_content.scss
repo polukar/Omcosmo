@@ -173,6 +173,284 @@
   .header__bg {
     width: 345px; } }
 
+.services .cards {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.services .card-item {
+  -webkit-flex-basis: 32%;
+      -ms-flex-preferred-size: 32%;
+          flex-basis: 32%;
+  min-width: 390px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-bottom: 82px; }
+  .services .card-item .btn {
+    font-weight: normal;
+    font-size: 15px; }
+
+.services .description {
+  background-color: #FFF2F7;
+  width: 100%;
+  padding: 22px 10px 30px; }
+  .services .description .btn-block {
+    text-align: center;
+    margin-top: 30px; }
+  .services .description h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 9px; }
+  .services .description h4 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 17px;
+    margin-bottom: 25px; }
+  .services .description p {
+    font-weight: normal;
+    font-size: 17px; }
+
+.services .equipment,
+.services .code,
+.services .doctor {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 10px; }
+  .services .equipment p:nth-child(1),
+  .services .code p:nth-child(1),
+  .services .doctor p:nth-child(1) {
+    margin-right: 10px; }
+
+.services__description {
+  text-align: center;
+  display: none; }
+  .services__description .name-service {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 15px; }
+  .services__description .detail-service {
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 20px; }
+
+@media screen and (max-width: 1240px) {
+  .cards {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+@media screen and (max-width: 1200px) {
+  .services__description {
+    display: block; } }
+
+@media screen and (max-width: 425px) {
+  .services .card-item {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    min-width: auto;
+    width: 100%; } }
+
+.service-detail .pink-line {
+  width: -webkit-calc((100vw - 1255px) / 2);
+  width: calc((100vw - 1255px) / 2);
+  position: absolute;
+  height: -webkit-calc(100% - 328px);
+  height: calc(100% - 328px);
+  background-color: #FFF2F7;
+  z-index: -1;
+  margin-top: 100px; }
+
+.service-detail .page-title {
+  margin-top: -100px;
+  margin-bottom: 60px;
+  text-align: center; }
+
+.service-detail .service-detail__detail {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 55px;
+  padding-left: 20px;
+  position: relative; }
+  .service-detail .service-detail__detail .bg-down {
+    width: 154px;
+    height: 147px;
+    background-image: url("../images/down-about.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
+.service-detail .detail-description {
+  padding-left: 70px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .service-detail .detail-description p {
+    margin-bottom: 20px; }
+
+.service-detail .btn-pink {
+  background-color: #FFF2F7;
+  color: #605458;
+  font-size: 16px;
+  position: relative;
+  z-index: 2;
+  margin-top: 36px; }
+  .service-detail .btn-pink:hover {
+    background-color: #938086;
+    color: #ffffff; }
+
+.service-detail .test {
+  background-color: #FFF2F7;
+  height: 200px; }
+
+.service-detail .doctor-detail {
+  background-color: #FFF2F7; }
+  .service-detail .doctor-detail .description-photo {
+    height: 530px; }
+  .service-detail .doctor-detail h2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 5px; }
+  .service-detail .doctor-detail p {
+    font-size: 20px;
+    margin-bottom: 30px; }
+  .service-detail .doctor-detail .detail-description {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    height: 530px; }
+    .service-detail .doctor-detail .detail-description p {
+      font-size: 17px; }
+    .service-detail .doctor-detail .detail-description .detail-photo {
+      height: 530px;
+      width: 371px;
+      margin-left: auto;
+      position: relative; }
+      .service-detail .doctor-detail .detail-description .detail-photo img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: fill;
+           object-fit: fill; }
+      .service-detail .doctor-detail .detail-description .detail-photo:after {
+        content: '';
+        width: 371px;
+        height: 530px;
+        background-color: #938086;
+        position: absolute;
+        right: -30px;
+        bottom: -30px;
+        z-index: -1; }
+  .service-detail .doctor-detail .headline,
+  .service-detail .doctor-detail .description {
+    width: 600px;
+    margin-right: auto; }
+  .service-detail .doctor-detail .description {
+    padding-left: 15px;
+    padding-top: 20px; }
+  .service-detail .doctor-detail .detail-photo {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3; }
+  .service-detail .doctor-detail .headline {
+    padding-top: 15px;
+    padding-left: 100px; }
+    .service-detail .doctor-detail .headline h2 {
+      margin-bottom: 10px; }
+
+.service-detail .white-bg {
+  height: 132px;
+  position: relative;
+  z-index: -5; }
+
+@media screen and (max-width: 1300px) {
+  .service-detail .doctor-detail .detail-description .detail-photo:after {
+    display: none; }
+  .service-detail .service-detail__detail .bg-down {
+    display: none; } }
+
+@media screen and (max-width: 1200px) {
+  .service-detail .page-title {
+    margin-top: 0; }
+  .service-detail .doctor-detail {
+    height: auto; }
+    .service-detail .doctor-detail .description-photo {
+      height: auto; }
+      .service-detail .doctor-detail .description-photo .detail-description {
+        display: block;
+        height: auto;
+        padding-bottom: 20px; }
+      .service-detail .doctor-detail .description-photo .detail-photo {
+        margin: 0 auto; }
+    .service-detail .doctor-detail .headline,
+    .service-detail .doctor-detail .description {
+      width: 100%; } }
+
+@media screen and (max-width: 1100px) {
+  .service-detail .doctor-detail .detail-description {
+    display: block; } }
+
+@media screen and (max-width: 968px) {
+  .service-detail .service-detail__detail {
+    display: block;
+    text-align: center; }
+    .service-detail .service-detail__detail .detail-description {
+      text-align: left;
+      padding-left: 0;
+      padding-top: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .service-detail .detail-description {
+    padding-left: 0; }
+  .service-detail .doctor-detail .headline,
+  .service-detail .doctor-detail .description {
+    padding-left: 15px; } }
+
+@media screen and (max-width: 600px) {
+  .service-detail .doctor-detail .description-photo .detail-photo {
+    width: 80%;
+    height: auto; }
+  .service-detail .service-detail__detail {
+    padding-left: 0; }
+    .service-detail .service-detail__detail img {
+      width: 80%; }
+  .service-detail .white-bg {
+    height: 50px; } }
+
 .main__fist-screen {
   min-height: -webkit-calc(100vh - 145px);
   min-height: calc(100vh - 145px);
@@ -1032,228 +1310,4 @@
     width: 100%; }
   .about .description__line p {
     font-size: 18px; } }
-
-.services .cards {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-
-.services .card-item {
-  -webkit-flex-basis: 32%;
-      -ms-flex-preferred-size: 32%;
-          flex-basis: 32%;
-  min-width: 390px;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  margin-left: 7px;
-  margin-right: 7px;
-  margin-bottom: 82px; }
-  .services .card-item .btn {
-    font-weight: normal;
-    font-size: 15px; }
-
-.services .description {
-  background-color: #FFF2F7;
-  width: 100%;
-  padding: 22px 10px 30px; }
-  .services .description .btn-block {
-    text-align: center;
-    margin-top: 30px; }
-  .services .description h3 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 20px;
-    margin-bottom: 9px; }
-  .services .description h4 {
-    text-align: center;
-    font-weight: normal;
-    font-size: 17px;
-    margin-bottom: 25px; }
-  .services .description p {
-    font-weight: normal;
-    font-size: 17px; }
-
-.services .equipment,
-.services .code,
-.services .doctor {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 10px; }
-  .services .equipment p:nth-child(1),
-  .services .code p:nth-child(1),
-  .services .doctor p:nth-child(1) {
-    margin-right: 10px; }
-
-.services__description {
-  text-align: center;
-  display: none; }
-  .services__description .name-service {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 30px;
-    margin-bottom: 15px; }
-  .services__description .detail-service {
-    font-weight: 500;
-    font-size: 25px;
-    margin-bottom: 20px; }
-
-@media screen and (max-width: 1240px) {
-  .cards {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; } }
-
-@media screen and (max-width: 1200px) {
-  .services__description {
-    display: block; } }
-
-@media screen and (max-width: 425px) {
-  .services .card-item {
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
-    min-width: auto;
-    width: 100%; } }
-
-.service-detail .pink-line {
-  width: -webkit-calc((100vw - 1255px) / 2);
-  width: calc((100vw - 1255px) / 2);
-  position: absolute;
-  height: -webkit-calc(100% - 328px);
-  height: calc(100% - 328px);
-  background-color: #FFF2F7;
-  z-index: -1;
-  margin-top: 100px; }
-
-.service-detail .page-title {
-  margin-top: -100px;
-  margin-bottom: 60px;
-  text-align: center; }
-
-.service-detail .service-detail__detail {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 55px;
-  padding-left: 20px;
-  position: relative; }
-  .service-detail .service-detail__detail .bg-down {
-    width: 154px;
-    height: 147px;
-    background-image: url("../images/down-about.png");
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    position: absolute;
-    bottom: 0;
-    left: 0; }
-
-.service-detail .detail-description {
-  padding-left: 70px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .service-detail .detail-description p {
-    margin-bottom: 20px; }
-
-.service-detail .btn-pink {
-  background-color: #FFF2F7;
-  color: #605458;
-  font-size: 16px;
-  position: relative;
-  z-index: 2;
-  margin-top: 36px; }
-  .service-detail .btn-pink:hover {
-    background-color: #938086;
-    color: #ffffff; }
-
-.service-detail .test {
-  background-color: #FFF2F7;
-  height: 200px; }
-
-.service-detail .doctor-detail {
-  background-color: #FFF2F7; }
-  .service-detail .doctor-detail .description-photo {
-    height: 530px; }
-  .service-detail .doctor-detail h2 {
-    font-weight: 600;
-    font-size: 20px;
-    margin-bottom: 5px; }
-  .service-detail .doctor-detail p {
-    font-size: 20px;
-    margin-bottom: 30px; }
-  .service-detail .doctor-detail .detail-description1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    height: 530px; }
-    .service-detail .doctor-detail .detail-description1 p {
-      font-size: 17px; }
-    .service-detail .doctor-detail .detail-description1 .detail-photo {
-      height: 530px;
-      width: 371px;
-      margin-left: auto;
-      position: relative; }
-      .service-detail .doctor-detail .detail-description1 .detail-photo img {
-        width: 100%;
-        height: 100%;
-        -o-object-fit: fill;
-           object-fit: fill; }
-      .service-detail .doctor-detail .detail-description1 .detail-photo:after {
-        content: '';
-        width: 371px;
-        height: 530px;
-        background-color: #938086;
-        position: absolute;
-        right: -30px;
-        bottom: -30px;
-        z-index: -1; }
-  .service-detail .doctor-detail .headline,
-  .service-detail .doctor-detail .description {
-    width: 600px;
-    margin-right: auto; }
-  .service-detail .doctor-detail .description {
-    padding-left: 15px;
-    padding-top: 20px; }
-  .service-detail .doctor-detail .detail-photo {
-    -webkit-box-ordinal-group: 4;
-    -webkit-order: 3;
-        -ms-flex-order: 3;
-            order: 3; }
-  .service-detail .doctor-detail .headline {
-    padding-top: 15px;
-    padding-left: 100px; }
-    .service-detail .doctor-detail .headline h2 {
-      margin-bottom: 10px; }
-
-.service-detail .white-bg {
-  height: 132px;
-  position: relative;
-  z-index: -5; }
 

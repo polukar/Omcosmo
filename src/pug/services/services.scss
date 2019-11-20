@@ -163,7 +163,7 @@ $white: #ffffff;
       font-size: 20px;
       margin-bottom: 30px;
     }
-    .detail-description1 {
+    .detail-description {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -220,3 +220,106 @@ $white: #ffffff;
   }
 }
 
+@media screen and (max-width: 1300px){
+  .service-detail {
+    .doctor-detail {
+      .detail-description {
+        .detail-photo {
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+    .service-detail__detail {
+      .bg-down {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .service-detail {
+    .page-title {
+      margin-top: 0;
+    }
+    .doctor-detail {
+      height: auto;
+      .description-photo {
+        height: auto;
+        .detail-description {
+          display: block;
+          height: auto;
+          padding-bottom: 20px;
+        }
+        .detail-photo {
+          margin: 0 auto;
+        }
+      }
+      .headline,
+      .description {
+        width: 100%;
+      }
+    }
+
+  }
+}
+//.service-detail .doctor-detail .description-photo {
+@media screen and (max-width: 1100px) {
+  .service-detail {
+    .doctor-detail {
+      .detail-description {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .service-detail {
+    .service-detail__detail {
+      display: block;
+      text-align: center;
+      .detail-description {
+        text-align: left;
+        padding-left: 0;
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service-detail {
+    .detail-description {
+      padding-left: 0;
+    }
+    .doctor-detail {
+      .headline,
+      .description {
+        padding-left: 15px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .service-detail {
+    .doctor-detail {
+      .description-photo {
+        .detail-photo {
+          width: 80%;
+          height: auto;
+        }
+      }
+    }
+    .service-detail__detail {
+      padding-left: 0;
+      img {
+        width: 80%;
+      }
+    }
+    .white-bg {
+      height: 50px;
+    }
+  }
+}
