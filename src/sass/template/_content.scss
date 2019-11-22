@@ -1559,14 +1559,13 @@ ul {
     background-color: #938086;
     color: #ffffff; }
 
-.service-detail .test {
-  background-color: #FFF2F7;
-  height: 200px; }
-
 .service-detail .doctor-detail {
   background-color: #FFF2F7; }
   .service-detail .doctor-detail .description-photo {
-    height: 530px; }
+    height: 530px;
+    padding-right: 50px;
+    position: relative;
+    z-index: 100; }
   .service-detail .doctor-detail h2 {
     font-weight: 600;
     font-size: 20px;
@@ -1632,11 +1631,20 @@ ul {
   position: relative;
   z-index: -5; }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
+  .service-detail .detail-description {
+    padding-left: 0; } }
+
+@media screen and (max-width: 1350px) {
   .service-detail .doctor-detail .detail-description .detail-photo:after {
     display: none; }
   .service-detail .service-detail__detail .bg-down {
     display: none; } }
+
+@media screen and (max-width: 1280px) {
+  .service-detail .doctor-detail .headline,
+  .service-detail .doctor-detail .description {
+    width: 530px; } }
 
 @media screen and (max-width: 1200px) {
   .service-detail .doctor-detail {
