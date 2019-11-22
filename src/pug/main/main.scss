@@ -1126,8 +1126,8 @@ $white: #ffffff;
       background-position: left top;
       position: absolute;
       top: 318px;
-      left: calc((100vw - 1255px) / 2);
-      z-index: -1;
+      left: 0;
+      z-index: 1;
     }
     .description {
       width: 55%;

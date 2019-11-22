@@ -1177,9 +1177,8 @@
       background-position: left top;
       position: absolute;
       top: 318px;
-      left: -webkit-calc((100vw - 1255px) / 2);
-      left: calc((100vw - 1255px) / 2);
-      z-index: -1; }
+      left: 0;
+      z-index: 1; }
     .detail-doctors .detail-doctor .description {
       width: 55%;
       height: 620px;
@@ -1329,7 +1328,6 @@
 
 .price .invisible {
   display: none; }
-
 
 ul {
   padding: 0;
@@ -1682,3 +1680,4 @@ ul {
       width: 80%; }
   .service-detail .white-bg {
     height: 50px; } }
+
