@@ -15,14 +15,21 @@
     font-size: 25px;
   }
 }
+.logo {
+  position: relative;
+  z-index: 2;
+  max-width: 330px;
+}
 .header__phone {
   color: #6F6266;
   a {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
     color: #6F6266;
     text-decoration: none;
+    position: relative;
+    z-index: 2;
   }
 }
 .header__description {
@@ -35,7 +42,6 @@
   position: absolute;
   top: 0;
   right: 0;
-  z-index: -1;
 }
 
 .mobile-menu {
@@ -46,9 +52,11 @@
   background-color: #fff;
   margin-top: 35px;
   cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 .mobile-menu-inside {
-  display: block;
+  display: none;
   cursor: pointer;
   .mobile-btn {
     span {
@@ -85,13 +93,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 1920px) {
-  .header__phone-inside {
-    .mobile-menu-inside {
-      display: block;
-    }
-  }
-}
+
 @media screen and (max-width: 1200px){
   .mobile-menu {
     display: block;
@@ -107,6 +109,13 @@
   }
   .header__phone-inside {
     .phone-icon {
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    .mobile-menu-inside {
       display: block;
     }
   }
