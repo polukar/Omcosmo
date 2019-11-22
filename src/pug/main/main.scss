@@ -3,7 +3,10 @@ $text-color-dark: #6F6266;
 $bg: #FFF2F7;
 $bg-dark: #938086;
 $white: #ffffff;
-
+.wrapper {
+  width: 100%;
+  max-width: 1255px;
+}
 .main__fist-screen {
   min-height: calc(100vh - 145px);
   background-image: url("../images/main.png");
@@ -194,7 +197,7 @@ $white: #ffffff;
   .description__line {
     background-color: $bg-dark;
     padding: 18px 60px;
-    max-width: 1020px;
+    max-width: 1024px;
     p {
       font-size: 35px;
       line-height: 43px;
@@ -781,17 +784,17 @@ $white: #ffffff;
   }
 }
 
+
+.pink-bg {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 100%;
+  background-color: $bg;
+}
+
 //About
 .about {
-  .pink-bg {
-    background-color: $bg;
-  }
-  .pink-line {
-    width: calc((100vw - 1255px) / 2);
-    position: absolute;
-    height: calc(100% - 328px);
-    background-color: $bg;
-  }
   .about__headline {
     position: relative;
   }
@@ -807,12 +810,12 @@ $white: #ffffff;
     }
   }
   .description {
-    width: 1020px;
+    width: 80%;
     margin: 0 auto;
     padding-top: 35px;
     padding-bottom: 102px;
     .description__headline {
-      width: 962px;
+      width: 80%;
       margin: 0 auto;
       margin-bottom: 29px;
     }

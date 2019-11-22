@@ -181,6 +181,10 @@
   .header__bg {
     width: 345px; } }
 
+.wrapper {
+  width: 100%;
+  max-width: 1255px; }
+
 .main__fist-screen {
   min-height: -webkit-calc(100vh - 145px);
   min-height: calc(100vh - 145px);
@@ -372,7 +376,7 @@
 .description .description__line {
   background-color: #938086;
   padding: 18px 60px;
-  max-width: 1020px; }
+  max-width: 1024px; }
   .description .description__line p {
     font-size: 35px;
     line-height: 43px;
@@ -857,15 +861,11 @@
   .map .btn-block {
     margin-bottom: 20px; } }
 
-.about .pink-bg {
-  background-color: #FFF2F7; }
-
-.about .pink-line {
-  width: -webkit-calc((100vw - 1255px) / 2);
-  width: calc((100vw - 1255px) / 2);
-  position: absolute;
-  height: -webkit-calc(100% - 328px);
-  height: calc(100% - 328px);
+.pink-bg {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 100%;
   background-color: #FFF2F7; }
 
 .about .about__headline {
@@ -882,12 +882,12 @@
     line-height: 50px; }
 
 .about .description {
-  width: 1020px;
+  width: 80%;
   margin: 0 auto;
   padding-top: 35px;
   padding-bottom: 102px; }
   .about .description .description__headline {
-    width: 962px;
+    width: 80%;
     margin: 0 auto;
     margin-bottom: 29px; }
 
@@ -1327,6 +1327,7 @@
 .price .invisible {
   display: none; }
 
+
 ul {
   padding: 0;
   margin: 0; }
@@ -1377,8 +1378,8 @@ ul {
   margin: 0 auto; }
 
 .page-title {
-  margin-top: -100px;
-  margin-bottom: 60px;
+  margin-top: -80px;
+  margin-bottom: 56px;
   text-align: center; }
 
 .services .cards {
@@ -1675,4 +1676,3 @@ ul {
       width: 80%; }
   .service-detail .white-bg {
     height: 50px; } }
-
