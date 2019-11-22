@@ -1113,10 +1113,10 @@ $white: #ffffff;
     height: 318px;
     background-color: $bg;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
   }
   .detail-doctor{
-    margin-top: 50px;
+    margin-top: 60px;
     position: relative;
     .bg-up {
       width: 154px;
@@ -1130,11 +1130,11 @@ $white: #ffffff;
       z-index: -1;
     }
     .description {
-      width: 720px;
+      width: 55%;
       height: 620px;
       padding-bottom: 30px;
       padding-top: 30px;
-      padding-left: 98px;
+      padding-left: 6%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -1152,9 +1152,11 @@ $white: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    position: relative;
+    z-index: 3;
   }
-  .pink-line {
-    height: calc(100% - 28px);
+  .doctor-photo {
+    margin-right: 15px;
   }
   .doctor-title {
     text-align: center;
@@ -1174,6 +1176,9 @@ $white: #ffffff;
 }
 @media screen and (max-width: 1200px){
   .detail-doctors {
+    .doctor-photo {
+      margin-right: 0;
+    }
     .bg-up {
       display: none;
     }

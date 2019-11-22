@@ -1165,9 +1165,9 @@
     height: 318px;
     background-color: #FFF2F7;
     position: absolute;
-    z-index: -1; }
+    z-index: 1; }
   .detail-doctors .detail-doctor {
-    margin-top: 50px;
+    margin-top: 60px;
     position: relative; }
     .detail-doctors .detail-doctor .bg-up {
       width: 154px;
@@ -1181,11 +1181,11 @@
       left: calc((100vw - 1255px) / 2);
       z-index: -1; }
     .detail-doctors .detail-doctor .description {
-      width: 720px;
+      width: 55%;
       height: 620px;
       padding-bottom: 30px;
       padding-top: 30px;
-      padding-left: 98px;
+      padding-left: 6%;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -1220,10 +1220,11 @@
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
-            align-items: flex-end; }
-  .detail-doctors .pink-line {
-    height: -webkit-calc(100% - 28px);
-    height: calc(100% - 28px); }
+            align-items: flex-end;
+    position: relative;
+    z-index: 3; }
+  .detail-doctors .doctor-photo {
+    margin-right: 15px; }
   .detail-doctors .doctor-title {
     text-align: center; }
     .detail-doctors .doctor-title h2 {
@@ -1237,6 +1238,8 @@
       color: #ffffff; }
 
 @media screen and (max-width: 1200px) {
+  .detail-doctors .doctor-photo {
+    margin-right: 0; }
   .detail-doctors .bg-up {
     display: none; }
   .detail-doctors .pink-bg {
@@ -1377,9 +1380,12 @@ ul {
   max-width: 1920px;
   margin: 0 auto; }
 
+.one-title {
+  margin-top: 5px; }
+
 .page-title {
-  margin-top: -80px;
-  margin-bottom: 56px;
+  margin-top: -100px;
+  margin-bottom: 71px;
   text-align: center; }
 
 .services .cards {
