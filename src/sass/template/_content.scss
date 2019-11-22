@@ -1075,7 +1075,7 @@
   background-color: #FFF2F7;
   padding-top: 19px;
   padding-bottom: 26px;
-  margin: 0 auto;
+  margin: 0 auto 157px;
   text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1099,9 +1099,9 @@
     -webkit-border-radius: 7px;
             border-radius: 7px;
     position: absolute;
-    z-index: -1;
     right: -34px;
-    bottom: -34px; }
+    bottom: -34px;
+    z-index: -1; }
   .all-doctors .personal-photo__card h3 {
     text-transform: uppercase;
     font-weight: 600;
@@ -1113,7 +1113,8 @@
 .all-doctors .personal-photo {
   padding-top: 73px;
   padding-bottom: 106px;
-  position: relative; }
+  position: relative;
+  z-index: 100; }
   .all-doctors .personal-photo .bg-up {
     width: 154px;
     height: 147px;
@@ -1122,10 +1123,7 @@
     background-position: left top;
     position: absolute;
     top: 0;
-    left: 8px; }
-
-.all-doctors .personal-photo__card {
-  margin-top: 157px; }
+    left: 0; }
 
 .all-doctors .boss {
   margin-top: 0; }
@@ -1141,6 +1139,12 @@
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
+
+.all-doctors .test {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: grey; }
 
 @media screen and (max-width: 1024px) {
   .all-doctors .personal-photo__card:after {
@@ -1328,6 +1332,7 @@
 
 .price .invisible {
   display: none; }
+
 
 ul {
   padding: 0;
@@ -1680,4 +1685,3 @@ ul {
       width: 80%; }
   .service-detail .white-bg {
     height: 50px; } }
-

@@ -1017,7 +1017,7 @@ $white: #ffffff;
     background-color: $bg;
     padding-top: 19px;
     padding-bottom: 26px;
-    margin: 0 auto;
+    margin: 0 auto 157px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -1030,9 +1030,9 @@ $white: #ffffff;
       background-color: $bg-dark;
       border-radius: 7px;
       position: absolute;
-      z-index: -1;
       right: -34px;
       bottom: -34px;
+      z-index: -1;
     }
     h3 {
       text-transform: uppercase;
@@ -1043,12 +1043,12 @@ $white: #ffffff;
     p {
       font-size: 20px;
     }
-
   }
   .personal-photo {
     padding-top: 73px;
     padding-bottom: 106px;
     position: relative;
+    z-index: 100;
     .bg-up {
       width: 154px;
       height: 147px;
@@ -1057,16 +1057,8 @@ $white: #ffffff;
       background-position: left top;
       position: absolute;
       top: 0;
-      left: 8px;
+      left: 0;
     }
-  }
-  .top-block {
-    .personal-photo__card {
-
-    }
-  }
-  .personal-photo__card {
-    margin-top: 157px;
   }
   .boss {
     margin-top: 0;
@@ -1075,9 +1067,15 @@ $white: #ffffff;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
+  }
+  .test {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: grey;
   }
 }
+
 @media screen and (max-width: 1024px){
   .all-doctors {
     .personal-photo__card {
