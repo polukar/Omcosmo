@@ -1399,6 +1399,36 @@ $white: #ffffff;
     }
   }
 }
+.feedback-form {
+  padding-right: 15px;
+  text-align: right;
+  .btn-pink {
+    background-color: $bg;
+    padding: 12px 39px;
+    color: $text-color;
+    font-weight: 300;
+    font-size: 16px;
+    &:hover {
+      background-color: #938086;
+      color: $white;
+    }
+  }
+  .btn-block{
+    margin-top: 29px;
+    margin-bottom: 102px;
+  }
+  input {
+    padding: 15px 15px 15px 31px;
+    width: 75%;
+    border: 1px solid #605458;
+    border-radius: 5px;
+    &::placeholder {
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
+}
 
 @media screen and (max-width: 425px){
   .feedback {
@@ -1420,6 +1450,12 @@ $white: #ffffff;
     }
     .btn-block {
       margin-bottom: 80px;
+    }
+  }
+  .feedback-form {
+    padding-left: 15px;
+    input {
+      width: 100%;
     }
   }
 }

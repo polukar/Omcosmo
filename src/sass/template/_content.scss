@@ -198,6 +198,7 @@
   .header .mobile-menu-inside {
     display: block; } }
 
+
 .wrapper {
   width: 100%;
   max-width: 1255px; }
@@ -1463,6 +1464,44 @@
 .feedback .feedback-block .white-bg {
   height: 108px; }
 
+.feedback-form {
+  padding-right: 15px;
+  text-align: right; }
+  .feedback-form .btn-pink {
+    background-color: #FFF2F7;
+    padding: 12px 39px;
+    color: #605458;
+    font-weight: 300;
+    font-size: 16px; }
+    .feedback-form .btn-pink:hover {
+      background-color: #938086;
+      color: #ffffff; }
+  .feedback-form .btn-block {
+    margin-top: 29px;
+    margin-bottom: 102px; }
+  .feedback-form input {
+    padding: 15px 15px 15px 31px;
+    width: 75%;
+    border: 1px solid #605458;
+    -webkit-border-radius: 5px;
+            border-radius: 5px; }
+    .feedback-form input::-webkit-input-placeholder {
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px; }
+    .feedback-form input::-moz-placeholder {
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px; }
+    .feedback-form input::-ms-input-placeholder {
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px; }
+    .feedback-form input::placeholder {
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px; }
+
 @media screen and (max-width: 425px) {
   .feedback .feedback-block .feedback-item {
     padding-top: 100px;
@@ -1475,8 +1514,11 @@
       margin-top: 10px;
       padding-left: 0; }
   .feedback .btn-block {
-    margin-bottom: 80px; } }
-
+    margin-bottom: 80px; }
+  .feedback-form {
+    padding-left: 15px; }
+    .feedback-form input {
+      width: 100%; } }
 
 ul {
   padding: 0;
