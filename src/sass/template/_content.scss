@@ -198,7 +198,6 @@
   .header .mobile-menu-inside {
     display: block; } }
 
-
 .wrapper {
   width: 100%;
   max-width: 1255px; }
@@ -1519,6 +1518,174 @@
     padding-left: 15px; }
     .feedback-form input {
       width: 100%; } }
+
+.contacts .description-page p {
+  font-weight: normal;
+  font-size: 20px; }
+
+.contacts .description-page h2 {
+  font-weight: normal;
+  font-size: 35px;
+  margin-bottom: 59px; }
+
+.contacts .description-page h3 {
+  font-weight: 500;
+  font-size: 20px; }
+  .contacts .description-page h3 span {
+    font-weight: normal;
+    font-size: 18px; }
+
+.contacts .description-page .pink-bg {
+  padding: 55px 0;
+  text-align: center; }
+  .contacts .description-page .pink-bg p {
+    margin-bottom: 20px; }
+  .contacts .description-page .pink-bg .headline {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: justify; }
+
+.contacts .info-block {
+  position: relative;
+  padding-top: 88px; }
+
+.contacts .info-block__flex {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.contacts .bg-up {
+  width: 154px;
+  height: 147px;
+  background-image: url("../images/up-about.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.contacts .bg-down {
+  width: 154px;
+  height: 147px;
+  background-image: url("../images/down-about.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.contacts .btn-block {
+  margin-top: 0; }
+
+.contacts .info-block__phone {
+  margin-bottom: 80px; }
+
+.contacts .info-block__social {
+  margin-bottom: 93px; }
+
+.contacts .info-block__phone,
+.contacts .info-block__social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+  .contacts .info-block__phone p,
+  .contacts .info-block__social p {
+    font-weight: normal;
+    font-size: 18px; }
+
+.contacts .phone {
+  margin-left: 20px; }
+  .contacts .phone a {
+    display: block;
+    text-decoration: none;
+    color: #605458;
+    margin-bottom: 20px; }
+
+.contacts .icon-block a {
+  margin-left: 11px; }
+
+.contacts .icon-block img {
+  height: 34px; }
+
+.contacts .btn-pink {
+  padding: 12px 25px;
+  background-color: #FFF2F7;
+  color: #605458;
+  font-size: 16px; }
+  .contacts .btn-pink:hover {
+    background-color: #938086;
+    color: #ffffff; }
+
+.contacts .map {
+  background-color: #FFF2F7; }
+  .contacts .map .map__iframe {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto; }
+    .contacts .map .map__iframe iframe {
+      width: 100%;
+      height: 500px; }
+  .contacts .map .map-healine {
+    font-weight: normal;
+    font-size: 18px;
+    width: 100%;
+    max-width: 565px;
+    margin-bottom: 13px; }
+
+.contacts .white-bg {
+  height: 94px; }
+
+@media screen and (max-width: 967px) {
+  .contacts .info-block__flex {
+    display: block;
+    padding-bottom: 30px; } }
+
+@media screen and (max-width: 660px) {
+  .contacts .info-block__phone {
+    display: block;
+    text-align: center; }
+    .contacts .info-block__phone p {
+      margin-bottom: 20px; } }
+
+@media screen and (max-width: 500px) {
+  .contacts .info-block__flex {
+    padding-bottom: 60px; }
+  .contacts .info-block__phone {
+    margin-bottom: 40px; }
+  .contacts .info-block__social {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px; }
+    .contacts .info-block__social p {
+      margin-bottom: 20px; }
+  .contacts .icon-block a {
+    margin-right: 10px;
+    margin-left: 10px; }
+  .contacts .map .map__iframe iframe {
+    height: 350px; } }
+
 
 ul {
   padding: 0;
