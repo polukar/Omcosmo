@@ -974,7 +974,6 @@ $white: #ffffff;
       .item {
         min-width: 300px;
         width: 100%;
-
       }
     }
     .description__line {
@@ -1102,7 +1101,6 @@ $white: #ffffff;
   }
 }
 
-
 .detail-doctors {
   padding-bottom: 100px;
   position: relative;
@@ -1207,7 +1205,6 @@ $white: #ffffff;
   }
 }
 
-
 .price {
   .pink-bg {
     height: 129px;
@@ -1235,12 +1232,15 @@ $white: #ffffff;
   .price {
     display: flex;
     justify-content: space-between;
-    width: 655px;
+    max-width: 655px;
     margin: 0 auto;
   }
   .price-list {
     padding-left: 15px;
     padding-right: 15px;
+    p {
+      font-size: 17px;
+    }
   }
   .price-list__body {
     background-repeat: no-repeat;
@@ -1264,15 +1264,162 @@ $white: #ffffff;
       top: 50%;
       transform: translate(0, -50%) rotateZ(-45deg);
     }
+  }
   .price-list__headline.active {
     &:before {
-      transform: translate(0, -50%) rotateZ(45deg);
+      transform: translate(0, -50%) rotateZ(135deg);
       }
     }
-
-  }
   .invisible {
     display: none;
   }
 }
+@media screen and (max-width: 425px){
+  .price {
+    .price-line {
+      .price {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+    .price-list__body {
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}
 
+.feedback {
+  .description-page {
+    p {
+      font-weight: normal;
+      font-size: 20px;
+    }
+    h2 {
+      font-weight: normal;
+      font-size: 35px;
+    }
+    .pink-bg {
+      padding: 55px 0;
+      text-align: center;
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .description {
+    padding-top: 30px;
+    width: 100%;
+    position: relative;
+    .bg-up {
+      width: 154px;
+      height: 147px;
+      background-image: url("../images/up-about.png");
+      background-repeat: no-repeat;
+      background-position: left top;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .headline {
+      width: 67%;
+      margin: 0 auto;
+    }
+    h3 {
+      font-weight: 500;
+      font-size: 25px;
+    }
+    span {
+      font-weight: normal;
+      font-size: 20px;
+    }
+  }
+  .btn-pink {
+    background-color: $bg;
+    padding: 12px 20px;
+    color: $text-color;
+    font-weight: 300;
+    font-size: 16px;
+    &:hover {
+      background-color: #938086;
+      color: $white;
+    }
+  }
+  .btn-block {
+    text-align: center;
+    margin: 52px 0;
+  }
+  .feedback-block {
+    .pink-bg {
+      border-radius: 5px;
+    }
+    .feedback-item {
+      position: relative;
+      font-weight: normal;
+      font-size: 16px;
+      padding-right: 15px;
+      padding-top: 28px;
+      padding-bottom: 28px;
+      .name {
+        font-weight: 500;
+        font-size: 18px;
+        position: absolute;
+        z-index: 100;
+        top: -50px;
+        left: calc(20% - 150px);
+        width: 166px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        p {
+          display: block;
+        }
+        &:after {
+          content: url("../images/feedback.svg");
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+      .text {
+        margin-left: auto;
+        width: 75%;
+        text-align: justify;
+      }
+      .date {
+        padding-left: 10%;
+      }
+    }
+    .white-bg {
+      height: 108px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px){
+  .feedback {
+    .feedback-block {
+      .feedback-item {
+        padding-top: 100px;
+        padding-left: 15px;
+        .name {
+          left: 15px;
+        }
+        .text {
+          width: 100%;
+        }
+        .date {
+          margin-top: 10px;
+          padding-left: 0;
+        }
+      }
+    }
+    .btn-block {
+      margin-bottom: 80px;
+    }
+  }
+}

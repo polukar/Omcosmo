@@ -1,5 +1,11 @@
+$text-color: #605458;
+$text-color-dark: #6F6266;
+$bg: #FFF2F7;
+$bg-dark: #938086;
+$white: #ffffff;
 .header {
-  padding: 10px 56px 30px 23px;
+  //padding: 10px 56px 30px 23px
+  padding: 43px 20px 43px 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +24,24 @@
 .logo {
   position: relative;
   z-index: 2;
-  max-width: 330px;
+  a {
+    display: block;
+    text-decoration: none;
+    padding-left: 112px;
+    text-transform: uppercase;
+    color: $text-color;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    img {
+      position: absolute;
+      top: -7px;
+      left: 0;
+      width: auto;
+      height: 70px;
+    }
+  }
 }
 .header__phone {
   color: #6F6266;
@@ -108,9 +131,15 @@
     display: none;
   }
   .header__phone-inside {
+    position: relative;
+    z-index: 2;
     .phone-icon {
       display: block;
     }
+  }
+  .header__bg {
+    width: 345px;
+    z-index: 0;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -120,8 +149,4 @@
     }
   }
 }
-@media screen and (max-width: 425px){
-  .header__bg {
-    width: 345px;
-  }
-}
+
