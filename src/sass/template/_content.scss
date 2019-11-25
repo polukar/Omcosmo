@@ -1942,6 +1942,12 @@ ul {
   .services .doctor p:nth-child(1) {
     margin-right: 10px; }
 
+.services .btn-block a {
+  text-decoration: none; }
+
+.services .btn-block a.btn {
+  display: inline-block; }
+
 .services__description {
   text-align: center;
   display: none; }
