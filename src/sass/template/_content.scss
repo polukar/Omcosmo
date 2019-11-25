@@ -198,6 +198,7 @@
   .header .mobile-menu-inside {
     display: block; } }
 
+
 .wrapper {
   width: 100%;
   max-width: 1255px; }
@@ -1749,10 +1750,15 @@
   text-indent: 20px;
   margin-bottom: 40px; }
 
-
 ul {
   padding: 0;
   margin: 0; }
+
+.btn-block a {
+  text-decoration: none; }
+
+.btn-block a.btn {
+  display: inline-block; }
 
 .container-main {
   width: 100%;
@@ -1941,12 +1947,6 @@ ul {
   .services .equipment p:nth-child(1),
   .services .doctor p:nth-child(1) {
     margin-right: 10px; }
-
-.services .btn-block a {
-  text-decoration: none; }
-
-.services .btn-block a.btn {
-  display: inline-block; }
 
 .services__description {
   text-align: center;
