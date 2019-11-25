@@ -15,12 +15,18 @@ ul {
   display: flex;
   justify-content: center;
   background-color: $bg;
+
 }
+//Меню
 .container-menu {
-  min-width: 330px;
   height: 100%;
+}
+.container-menu,
+.container-menu-main{
+  min-width: 330px;
   background-color: $bg;
   .nav-menu {
+    position: relative;
     li {
       list-style: none;
       text-align: center;
@@ -39,8 +45,51 @@ ul {
         color: $white;
       }
     }
+    .sub {
+      position: relative;
+      &:after {
+        content: '>';
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+    }
+    .sub-menu-item-1 {
+      min-height: 100%;
+      width: 330px;
+      position: absolute;
+      z-index: 200;
+      top: 0;
+      right: -330px;
+      background-color: $bg;
+      border-left: 2px solid $white;
+      border-right: 2px solid $white;
+      display: none;
+    }
+    .sub-menu-item-2 {
+      min-height: 100%;
+      width: 330px;
+      position: absolute;
+      top: 0;
+      right: -660px;
+      z-index: 200;
+      background-color: $bg;
+      border-right: 2px solid $white;
+      display: none;
+      .item-1 {
+        display: none;
+        min-height: 100%;
+        opacity: 1;
+
+
+      }
+    }
   }
 }
+
+
+
 .container-content {
   width: 100%;
   background-color: $white;
@@ -52,11 +101,12 @@ ul {
 }
 .one-title {
   margin-top: 5px;
+  margin-bottom: 61px;
 }
 
 .page-title {
-  margin-top: -95px;
-  margin-bottom: 66px;
+  margin-top: -90px;
+  margin-bottom: 50px;
   text-align: center;
 }
 .services {
