@@ -18,3 +18,4 @@ for (n=0; n < accPrice.length; n++)
 // $(window).load(function() {
 //     $("#before-after").twentytwenty();
 // });
+

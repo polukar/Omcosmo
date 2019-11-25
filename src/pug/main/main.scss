@@ -1067,13 +1067,17 @@ $white: #ffffff;
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  .test {
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-color: grey;
+  .btn-block {
+    a {
+      text-decoration: none;
+    }
+    a.btn {
+      display: inline-block;
+    }
   }
 }
+
+
 
 @media screen and (max-width: 1024px){
   .all-doctors {
@@ -1112,7 +1116,7 @@ $white: #ffffff;
     z-index: 1;
   }
   .detail-doctor{
-    margin-top: 60px;
+    margin-top: 50px;
     position: relative;
     .bg-up {
       width: 154px;
@@ -1244,6 +1248,11 @@ $white: #ffffff;
     border: 1px solid #6F6266;
     border-top: none;
     padding: 14px 0;
+    .price {
+      .name-service {
+        max-width: 60%;
+      }
+    }
   }
   .price-line:last-child{
     border-bottom: 1px solid #6F6266;

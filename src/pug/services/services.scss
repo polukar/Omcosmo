@@ -20,6 +20,8 @@ ul {
 //Меню
 .container-menu {
   height: 100%;
+  position: relative;
+  z-index: 1000;
 }
 .container-menu,
 .container-menu-main{
@@ -45,50 +47,54 @@ ul {
         color: $white;
       }
     }
+    .sub-menu {
+      min-height: 100%;
+      position: absolute;
+      background-color: $bg;
+      border-left: 5px solid $white;
+      border-right: 5px solid $white;
+      width: 100%;
+      left: -100%;
+      top: 0;
+      z-index: 100;
+      opacity: 0;
+      transition: .5s opacity;
+    }
     .sub {
-      position: relative;
-      &:after {
-        content: '>';
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translate(0, -50%);
+      &:hover .sub-menu{
+        opacity: 1;
+        left: 100%;
       }
     }
-    .sub-menu-item-1 {
+    .sub-sub-menu {
       min-height: 100%;
-      width: 330px;
       position: absolute;
-      z-index: 200;
-      top: 0;
-      right: -330px;
       background-color: $bg;
-      border-left: 2px solid $white;
-      border-right: 2px solid $white;
-      display: none;
+      border-left: 5px solid $white;
+      border-right: 5px solid $white;
+      width: 100%;
+      left: -200%;
+      top: 0;
+      z-index: 100;
+      opacity: 0;
+      transition: .5s opacity;
     }
-    .sub-menu-item-2 {
-      min-height: 100%;
-      width: 330px;
-      position: absolute;
-      top: 0;
-      right: -660px;
-      z-index: 200;
-      background-color: $bg;
-      border-right: 2px solid $white;
-      display: none;
-      .item-1 {
-        display: none;
-        min-height: 100%;
+    .sub-sub {
+      &:hover .sub-sub-menu {
         opacity: 1;
-
-
+        left: 100%;
       }
     }
   }
 }
 
-
+.sub-arrow {
+  &:after {
+    content: '>';
+    position: absolute;
+    right: 10px;
+  }
+}
 
 .container-content {
   width: 100%;
