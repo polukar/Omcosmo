@@ -1251,6 +1251,9 @@ $white: #ffffff;
     .price {
       .name-service {
         max-width: 60%;
+        span {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -1367,6 +1370,12 @@ $white: #ffffff;
   }
   .item-31 {
     background-image: url("../images/item-31.png");
+  }
+  .item-32 {
+    background-image: url("../images/item-32.png");
+  }
+  .item-33 {
+    background-image: url("../images/item-33.png");
   }
   .price-list__headline {
     position: relative;
@@ -1793,7 +1802,7 @@ $white: #ffffff;
   z-index: 200;
   top: 0;
   width: 100%;
-  max-width: 330px;
+  max-width: 425px;
   min-height: 100vh;
   background-color: $bg;
   padding-top: 20px;
