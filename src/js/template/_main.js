@@ -15,7 +15,29 @@ for (n=0; n < accPrice.length; n++)
         this.nextElementSibling.classList.toggle('invisible');
     };
 
-// $(window).load(function() {
-//     $("#before-after").twentytwenty();
-// });
+(function($){
+    $(function() {
+        $('.mobile-btn').on('click', function() {
+            $('div.mobile-menu').toggleClass('active');
+        });
+    });
+})(jQuery);
 
+(function($){
+    $(function() {
+        $('.btn-close').on('click', function() {
+            $('div.mobile-menu').toggleClass('active');
+            $('#mobile-menu__main').addClass('active');
+            $('#mobile-menu__sub-1').removeClass('active');
+        });
+    });
+})(jQuery);
+
+(function($){
+    $(function() {
+        $('.sub-1').on('click', function() {
+            $('#mobile-menu__main').toggleClass('active');
+            $('#mobile-menu__sub-1').toggleClass('active');
+        });
+    });
+})(jQuery);
