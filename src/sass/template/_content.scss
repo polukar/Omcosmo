@@ -1462,7 +1462,11 @@
     padding-left: 5px;
     padding-right: 5px; }
   .price .price-list__body p {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .price .price-list__headline:before {
+    left: 5px; }
+  .price .price-acc {
+    padding-left: 20px; } }
 
 .feedback .description-page p {
   font-weight: normal;

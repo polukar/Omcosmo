@@ -1414,6 +1414,14 @@ $white: #ffffff;
         font-size: 13px;
       }
     }
+    .price-list__headline {
+      &:before {
+        left: 5px;
+      }
+    }
+    .price-acc {
+      padding-left: 20px;
+    }
   }
 }
 
