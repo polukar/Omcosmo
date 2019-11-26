@@ -1714,6 +1714,7 @@ $white: #ffffff;
     position: relative;
     cursor: pointer;
     margin-left: auto;
+    margin-bottom: 10px;
     span {
       position: absolute;
       top: 50%;
@@ -1750,12 +1751,20 @@ $white: #ffffff;
   .btn-back {
     &:after {
       content: '>';
+      position: absolute;
+      right: 50px;
     }
   }
   .mobile-menu__sub-1 {
     display: none;
   }
-
+  .arrow {
+    &:before {
+      content: '<';
+      position: absolute;
+      left: 10px;
+    }
+  }
 }
 
 .mobile-menu.active {

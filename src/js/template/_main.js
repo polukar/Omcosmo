@@ -26,9 +26,8 @@ for (n=0; n < accPrice.length; n++)
 (function($){
     $(function() {
         $('.btn-close').on('click', function() {
+            returnDefault();
             $('div.mobile-menu').toggleClass('active');
-            $('#mobile-menu__main').addClass('active');
-            $('#mobile-menu__sub-1').removeClass('active');
         });
     });
 })(jQuery);
@@ -41,3 +40,18 @@ for (n=0; n < accPrice.length; n++)
         });
     });
 })(jQuery);
+
+(function($){
+    $(function() {
+        $('.btn-back').on('click', function() {
+            returnDefault();
+            $('div.mobile-menu').addClass('active');
+        });
+    });
+})(jQuery);
+
+
+function returnDefault() {
+    $('#mobile-menu__main').addClass('active');
+    $('#mobile-menu__sub-1').removeClass('active');
+}
