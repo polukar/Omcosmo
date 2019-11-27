@@ -1,3 +1,4 @@
+//Аккордеоны
 let acc = document.getElementsByClassName('question');
 let i;
     for (i=0; i < acc.length; i++)
@@ -15,6 +16,7 @@ for (n=0; n < accPrice.length; n++)
         this.nextElementSibling.classList.toggle('invisible');
     };
 
+//Мобильное меню
 (function($){
     $(function() {
         $('.mobile-btn').on('click', function() {
@@ -50,8 +52,14 @@ for (n=0; n < accPrice.length; n++)
     });
 })(jQuery);
 
-
 function returnDefault() {
     $('#mobile-menu__main').addClass('active');
     $('#mobile-menu__sub-1').removeClass('active');
 }
+
+
+// Плагин twentytwenty
+$(window).load(function() {
+    $("#before-after").twentytwenty();
+    $("#before-after-about").twentytwenty();
+})(jQuery);

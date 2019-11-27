@@ -38,10 +38,10 @@ gulp.task('views', function buildHTML() {
 
 gulp.task('scripts', ['delJs'], function () {
 	return gulp.src([
-		'src/libs/jquery/dist/jquery.js',
+		// 'src/libs/jquery/dist/jquery.js',
 		// 'src/libs/mask/tmask.js',
 		// 'src/libs/mask/mask.js',
-		'src/libs/datepicker.js',
+		// 'src/libs/datepicker.js',
 		'src/libs/jquery.event.move.js',
 		'src/libs/jquery.twentytwenty.js',
 		// 'src/libs/slick.js',
@@ -49,8 +49,8 @@ gulp.task('scripts', ['delJs'], function () {
 		// 'src/libs/fullpage.js',
 		// 'src/libs/fancybox.js',
 		// 'src/libs/scrollbar.js',
-		'src/libs/wnumb.js',
-		'src/libs/nouislider.js'
+		// 'src/libs/wnumb.js',
+		// 'src/libs/nouislider.js'
 	])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
