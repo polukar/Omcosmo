@@ -1896,7 +1896,8 @@ $white: #ffffff;
       color: $white;
     }
   }
-  .btn-back {
+  .btn-back,
+  .btn-back-1{
     &:after {
       content: '>';
       position: absolute;
@@ -1913,17 +1914,21 @@ $white: #ffffff;
       left: 10px;
     }
   }
+  .mobile-menu__sub-1-2{
+    display: none;
+  }
 }
+
 .mobile-menu.active {
   right: 0;
   display: block;
 }
-.mobile-menu__sub-1.active {
-  display: block;
-}
+
 .mobile-menu__main {
   display: none;
 }
-.mobile-menu__main.active {
+.mobile-menu__sub-1.active,
+.mobile-menu__main.active,
+.mobile-menu__sub-1-2.active {
   display: block;
 }

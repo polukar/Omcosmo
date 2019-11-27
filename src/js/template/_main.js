@@ -17,6 +17,7 @@ for (n=0; n < accPrice.length; n++)
     };
 
 //Мобильное меню
+//Вызов главного меню
 (function($){
     $(function() {
         $('.mobile-btn').on('click', function() {
@@ -24,7 +25,7 @@ for (n=0; n < accPrice.length; n++)
         });
     });
 })(jQuery);
-
+//Закрытие меню. По нажатию на кнопку закрыть меню все классы сбрасываются по умолчанию
 (function($){
     $(function() {
         $('.btn-close').on('click', function() {
@@ -33,7 +34,7 @@ for (n=0; n < accPrice.length; n++)
         });
     });
 })(jQuery);
-
+//Открытие первого подменю
 (function($){
     $(function() {
         $('.sub-1').on('click', function() {
@@ -42,7 +43,7 @@ for (n=0; n < accPrice.length; n++)
         });
     });
 })(jQuery);
-
+//Нажатие на кнопку назад из первого подменю
 (function($){
     $(function() {
         $('.btn-back').on('click', function() {
@@ -51,11 +52,34 @@ for (n=0; n < accPrice.length; n++)
         });
     });
 })(jQuery);
+//Нажатие на кнопку назад из второго подменю
+(function($){
+    $(function() {
+        $('.btn-back-1').on('click', function() {
+            $('#mobile-menu__sub-1-2').removeClass('active');
+            $('#mobile-menu__sub-1').addClass('active');
 
+        });
+    });
+})(jQuery);
+
+//Открытие второго поменю
+(function($){
+    $(function() {
+        $('.sub-1-2').on('click', function() {
+            $('#mobile-menu__sub-1').removeClass('active');
+            $('#mobile-menu__sub-1-2').addClass('active');
+
+        });
+    });
+})(jQuery);
+
+//Функция сброса классов по умолчанию
 function returnDefault() {
     $('#mobile-menu__main').addClass('active');
     $('#mobile-menu__sub-1').removeClass('active');
 }
+
 
 
 // Плагин twentytwenty

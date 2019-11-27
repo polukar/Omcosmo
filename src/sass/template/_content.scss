@@ -186,7 +186,6 @@
   .header .mobile-menu-inside {
     display: block; } }
 
-
 .wrapper {
   width: 100%;
   max-width: 1255px; }
@@ -1926,7 +1925,8 @@
     .mobile-menu .menu-item:hover {
       background-color: #938086;
       color: #ffffff; }
-  .mobile-menu .btn-back:after {
+  .mobile-menu .btn-back:after,
+  .mobile-menu .btn-back-1:after {
     content: '>';
     position: absolute;
     right: 50px; }
@@ -1936,19 +1936,21 @@
     content: '<';
     position: absolute;
     left: 10px; }
+  .mobile-menu .mobile-menu__sub-1-2 {
+    display: none; }
 
 .mobile-menu.active {
   right: 0;
   display: block; }
 
-.mobile-menu__sub-1.active {
-  display: block; }
-
 .mobile-menu__main {
   display: none; }
 
-.mobile-menu__main.active {
+.mobile-menu__sub-1.active,
+.mobile-menu__main.active,
+.mobile-menu__sub-1-2.active {
   display: block; }
+
 
 ul {
   padding: 0;
