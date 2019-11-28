@@ -294,7 +294,7 @@ ul {
     }
     p {
       font-size: 20px;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
     .detail-description {
       display: flex;
@@ -468,6 +468,12 @@ ul {
     }
     .white-bg {
       height: 50px;
+    }
+    .service-detail__detail {
+      .detail-description {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
     }
   }
 }

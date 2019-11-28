@@ -69,7 +69,6 @@ for (n=0; n < accPrice.length; n++)
         $('.sub-1-2').on('click', function() {
             $('#mobile-menu__sub-1').removeClass('active');
             $('#mobile-menu__sub-1-2').addClass('active');
-
         });
     });
 })(jQuery);
