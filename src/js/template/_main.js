@@ -57,6 +57,7 @@ for (n=0; n < accPrice.length; n++)
     $(function() {
         $('.btn-back-1').on('click', function() {
             $('#mobile-menu__sub-1-2').removeClass('active');
+            $('#mobile-menu__sub-2-2').removeClass('active');
             $('#mobile-menu__sub-1').addClass('active');
 
         });
@@ -73,10 +74,22 @@ for (n=0; n < accPrice.length; n++)
     });
 })(jQuery);
 
+(function($){
+    $(function() {
+        $('.sub-2-2').on('click', function() {
+            $('#mobile-menu__sub-1').removeClass('active');
+            $('#mobile-menu__sub-2-2').addClass('active');
+        });
+    });
+})(jQuery);
+
+
 //Функция сброса классов по умолчанию
 function returnDefault() {
     $('#mobile-menu__main').addClass('active');
     $('#mobile-menu__sub-1').removeClass('active');
+    $('#mobile-menu__sub-1-2').removeClass('active');
+    $('#mobile-menu__sub-2-2').removeClass('active');
 }
 
 

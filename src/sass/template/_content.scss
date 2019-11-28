@@ -1,3 +1,72 @@
+.footer {
+  padding-top: 20px;
+  background-color: #FFF2F7; }
+  .footer .logo-phone a {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #6F6266;
+    text-decoration: none;
+    margin-bottom: 5px; }
+  .footer img {
+    margin-bottom: 11px; }
+  .footer .phone-link {
+    display: block; }
+  .footer .btn {
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 24px; }
+  .footer .footer-big {
+    padding-bottom: 25px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .footer .footer-big .icon-block {
+      text-align: center; }
+      .footer .footer-big .icon-block a {
+        margin-right: 3px;
+        margin-left: 3px; }
+  .footer .footer-small {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #938086;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 0; }
+    .footer .footer-small a {
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 17px;
+      text-decoration: none;
+      margin-left: 10px;
+      margin-right: 10px; }
+
+@media screen and (max-width: 768px) {
+  .footer .footer-small {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .footer .footer-small a {
+      margin-bottom: 10px; } }
+
+@media screen and (max-width: 425px) {
+  .footer .footer-big {
+    display: block;
+    text-align: center; } }
+
 .header {
   padding: 43px 20px 43px 65px;
   display: -webkit-box;
@@ -116,75 +185,6 @@
 @media screen and (max-width: 1024px) {
   .header .mobile-menu-inside {
     display: block; } }
-
-.footer {
-  padding-top: 20px;
-  background-color: #FFF2F7; }
-  .footer .logo-phone a {
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 16px;
-    color: #6F6266;
-    text-decoration: none;
-    margin-bottom: 5px; }
-  .footer img {
-    margin-bottom: 11px; }
-  .footer .phone-link {
-    display: block; }
-  .footer .btn {
-    font-weight: 300;
-    font-size: 16px;
-    margin-bottom: 24px; }
-  .footer .footer-big {
-    padding-bottom: 25px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .footer .footer-big .icon-block {
-      text-align: center; }
-      .footer .footer-big .icon-block a {
-        margin-right: 3px;
-        margin-left: 3px; }
-  .footer .footer-small {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #938086;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 10px 0; }
-    .footer .footer-small a {
-      color: #ffffff;
-      font-size: 14px;
-      line-height: 17px;
-      text-decoration: none;
-      margin-left: 10px;
-      margin-right: 10px; }
-
-@media screen and (max-width: 768px) {
-  .footer .footer-small {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-    .footer .footer-small a {
-      margin-bottom: 10px; } }
-
-@media screen and (max-width: 425px) {
-  .footer .footer-big {
-    display: block;
-    text-align: center; } }
 
 .wrapper {
   width: 100%;
@@ -1952,7 +1952,8 @@
     content: '<';
     position: absolute;
     left: 10px; }
-  .mobile-menu .mobile-menu__sub-1-2 {
+  .mobile-menu .mobile-menu__sub-1-2,
+  .mobile-menu .mobile-menu__sub-2-2 {
     display: none; }
 
 .mobile-menu.active {
@@ -1964,7 +1965,8 @@
 
 .mobile-menu__sub-1.active,
 .mobile-menu__main.active,
-.mobile-menu__sub-1-2.active {
+.mobile-menu__sub-1-2.active,
+.mobile-menu__sub-2-2.active {
   display: block; }
 
 
