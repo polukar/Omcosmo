@@ -1933,7 +1933,8 @@ $white: #ffffff;
     }
   }
   .mobile-menu__sub-1-2,
-  .mobile-menu__sub-2-2{
+  .mobile-menu__sub-2-2,
+  .mobile-menu__sub-3-2{
     display: none;
   }
 }
@@ -1949,6 +1950,7 @@ $white: #ffffff;
 .mobile-menu__sub-1.active,
 .mobile-menu__main.active,
 .mobile-menu__sub-1-2.active,
-.mobile-menu__sub-2-2.active{
+.mobile-menu__sub-2-2.active,
+.mobile-menu__sub-3-2.active{
   display: block;
 }
