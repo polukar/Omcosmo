@@ -2332,7 +2332,8 @@ ul {
 
 @media screen and (max-width: 1400px) {
   .service-detail .detail-description {
-    padding-left: 0; } }
+    padding-left: 20px;
+    padding-right: 20px; } }
 
 @media screen and (max-width: 1350px) {
   .service-detail .doctor-detail .detail-description .detail-photo:after {

@@ -209,6 +209,7 @@ ul {
     margin-bottom: 20px;
   }
 }
+
 @media screen and (max-width: 1313px) {
   .cards {
     justify-content: center;
@@ -355,7 +356,8 @@ ul {
 @media screen and (max-width: 1400px) {
   .service-detail {
     .detail-description {
-      padding-left: 0;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 }
