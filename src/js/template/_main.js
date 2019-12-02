@@ -101,6 +101,15 @@ for (n=0; n < accPrice.length; n++)
     });
 })(jQuery);
 
+(function($){
+    $(function() {
+        $('.sub-5-2').on('click', function() {
+            $('#mobile-menu__sub-1').removeClass('active');
+            $('#mobile-menu__sub-5-2').addClass('active');
+        });
+    });
+})(jQuery);
+
 
 //Функция сброса классов по умолчанию
 function returnDefault() {
@@ -110,6 +119,7 @@ function returnDefault() {
     $('#mobile-menu__sub-2-2').removeClass('active');
     $('#mobile-menu__sub-3-2').removeClass('active');
     $('#mobile-menu__sub-4-2').removeClass('active');
+    $('#mobile-menu__sub-5-2').removeClass('active');
 }
 
 

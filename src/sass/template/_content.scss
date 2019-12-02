@@ -288,7 +288,7 @@
 
 @media screen and (max-width: 1600px) {
   .titles {
-    margin-left: 245px; } }
+    margin-left: 275px; } }
 
 @media screen and (max-width: 1200px) {
   .titles {
@@ -1955,7 +1955,8 @@
   .mobile-menu .mobile-menu__sub-1-2,
   .mobile-menu .mobile-menu__sub-2-2,
   .mobile-menu .mobile-menu__sub-3-2,
-  .mobile-menu .mobile-menu__sub-4-2 {
+  .mobile-menu .mobile-menu__sub-4-2,
+  .mobile-menu .mobile-menu__sub-5-2 {
     display: none; }
 
 .mobile-menu.active {
@@ -1970,7 +1971,8 @@
 .mobile-menu__sub-1-2.active,
 .mobile-menu__sub-2-2.active,
 .mobile-menu__sub-3-2.active,
-.mobile-menu__sub-4-2.active {
+.mobile-menu__sub-4-2.active,
+.mobile-menu__sub-5-2.active {
   display: block; }
 
 
