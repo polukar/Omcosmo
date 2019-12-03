@@ -131,6 +131,11 @@ ul {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  .page-title {
+    h2 {
+      text-transform: uppercase;
+    }
+  }
   .card-item {
     flex-basis: 30%;
     min-width: 320px;
