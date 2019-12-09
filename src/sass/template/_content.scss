@@ -1205,7 +1205,6 @@
     height: auto; } }
 
 .detail-doctors {
-  padding-bottom: 100px;
   position: relative; }
   .detail-doctors .pink-bg {
     width: 100%;
@@ -1214,6 +1213,7 @@
     position: absolute;
     z-index: 1; }
   .detail-doctors .detail-doctor {
+    padding-bottom: 270px;
     margin-top: 50px;
     position: relative; }
     .detail-doctors .detail-doctor .bg-up {
@@ -1252,6 +1252,8 @@
               order: -1; }
       .detail-doctors .detail-doctor .description p {
         margin-bottom: 20px; }
+        .detail-doctors .detail-doctor .description p span {
+          font-weight: 500; }
       .detail-doctors .detail-doctor .description .btn-block {
         text-align: right; }
   .detail-doctors .description-photo {
@@ -2278,10 +2280,13 @@ ul {
   .service-detail .doctor-detail h2 {
     font-weight: 600;
     font-size: 20px;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    text-transform: uppercase; }
   .service-detail .doctor-detail p {
     font-size: 20px;
-    margin-bottom: 5px; }
+    margin-bottom: 15px; }
+    .service-detail .doctor-detail p span {
+      font-weight: 500; }
   .service-detail .doctor-detail .detail-description {
     display: -webkit-box;
     display: -webkit-flex;

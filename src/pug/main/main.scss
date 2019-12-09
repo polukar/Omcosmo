@@ -1146,7 +1146,6 @@ $white: #ffffff;
 }
 
 .detail-doctors {
-  padding-bottom: 100px;
   position: relative;
   .pink-bg {
     width: 100%;
@@ -1156,6 +1155,7 @@ $white: #ffffff;
     z-index: 1;
   }
   .detail-doctor{
+    padding-bottom: 270px;
     margin-top: 50px;
     position: relative;
     .bg-up {
@@ -1182,6 +1182,9 @@ $white: #ffffff;
       order: -1;
       p {
         margin-bottom: 20px;
+        span {
+          font-weight: 500;
+        }
       }
       .btn-block {
         text-align: right;
