@@ -169,7 +169,7 @@ ul {
       text-align: center;
       font-weight: 600;
       font-size: 20px;
-      margin-bottom: 9px;
+      margin-bottom: 12px;
     }
     h4 {
       text-align: center;
@@ -180,6 +180,7 @@ ul {
     p {
       font-weight: normal;
       font-size: 17px;
+      line-height: normal;
     }
   }
   .code {
@@ -312,7 +313,8 @@ ul {
       flex-wrap: wrap;
       height: 530px;
       p {
-        font-size: 17px;
+        font-size: 16px;
+        line-height: normal;
       }
       .detail-photo {
         height: 530px;

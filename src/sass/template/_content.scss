@@ -2155,7 +2155,7 @@ ul {
     text-align: center;
     font-weight: 600;
     font-size: 20px;
-    margin-bottom: 9px; }
+    margin-bottom: 12px; }
   .services .description h4 {
     text-align: center;
     font-weight: normal;
@@ -2163,7 +2163,8 @@ ul {
     margin-bottom: 25px; }
   .services .description p {
     font-weight: normal;
-    font-size: 17px; }
+    font-size: 17px;
+    line-height: normal; }
 
 .services .code {
   display: -webkit-box;
@@ -2302,7 +2303,8 @@ ul {
             flex-wrap: wrap;
     height: 530px; }
     .service-detail .doctor-detail .detail-description p {
-      font-size: 17px; }
+      font-size: 16px;
+      line-height: normal; }
     .service-detail .doctor-detail .detail-description .detail-photo {
       height: 530px;
       width: 371px;
