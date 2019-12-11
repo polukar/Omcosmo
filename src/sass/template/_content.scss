@@ -186,6 +186,7 @@
   .header .mobile-menu-inside {
     display: block; } }
 
+
 .wrapper {
   width: 100%;
   max-width: 1255px; }
@@ -1962,11 +1963,7 @@
     content: '<';
     position: absolute;
     left: 10px; }
-  .mobile-menu .mobile-menu__sub-1-2,
-  .mobile-menu .mobile-menu__sub-2-2,
-  .mobile-menu .mobile-menu__sub-3-2,
-  .mobile-menu .mobile-menu__sub-4-2,
-  .mobile-menu .mobile-menu__sub-5-2 {
+  .mobile-menu .sub-3 {
     display: none; }
 
 .mobile-menu.active {
@@ -1978,13 +1975,8 @@
 
 .mobile-menu__sub-1.active,
 .mobile-menu__main.active,
-.mobile-menu__sub-1-2.active,
-.mobile-menu__sub-2-2.active,
-.mobile-menu__sub-3-2.active,
-.mobile-menu__sub-4-2.active,
-.mobile-menu__sub-5-2.active {
+.sub-3.active {
   display: block; }
-
 
 .modal-bg {
   display: none;

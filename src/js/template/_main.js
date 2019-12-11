@@ -25,6 +25,7 @@ for (n=0; n < accPrice.length; n++)
         });
     });
 })(jQuery);
+
 //Закрытие меню. По нажатию на кнопку закрыть меню все классы сбрасываются по умолчанию
 (function($){
     $(function() {
@@ -34,6 +35,7 @@ for (n=0; n < accPrice.length; n++)
         });
     });
 })(jQuery);
+
 //Открытие первого подменю
 (function($){
     $(function() {
@@ -56,10 +58,8 @@ for (n=0; n < accPrice.length; n++)
 (function($){
     $(function() {
         $('.btn-back-1').on('click', function() {
-            $('#mobile-menu__sub-1-2').removeClass('active');
-            $('#mobile-menu__sub-2-2').removeClass('active');
+            $('.sub-3').removeClass('active');
             $('#mobile-menu__sub-1').addClass('active');
-
         });
     });
 })(jQuery);
@@ -67,45 +67,10 @@ for (n=0; n < accPrice.length; n++)
 //Открытие второго поменю
 (function($){
     $(function() {
-        $('.sub-1-2').on('click', function() {
+        $('.sub-2').on('click', function() {
+            $menu = "#" + this.dataset.menu;
             $('#mobile-menu__sub-1').removeClass('active');
-            $('#mobile-menu__sub-1-2').addClass('active');
-        });
-    });
-})(jQuery);
-
-(function($){
-    $(function() {
-        $('.sub-2-2').on('click', function() {
-            $('#mobile-menu__sub-1').removeClass('active');
-            $('#mobile-menu__sub-2-2').addClass('active');
-        });
-    });
-})(jQuery);
-
-(function($){
-    $(function() {
-        $('.sub-3-2').on('click', function() {
-            $('#mobile-menu__sub-1').removeClass('active');
-            $('#mobile-menu__sub-3-2').addClass('active');
-        });
-    });
-})(jQuery);
-
-(function($){
-    $(function() {
-        $('.sub-4-2').on('click', function() {
-            $('#mobile-menu__sub-1').removeClass('active');
-            $('#mobile-menu__sub-4-2').addClass('active');
-        });
-    });
-})(jQuery);
-
-(function($){
-    $(function() {
-        $('.sub-5-2').on('click', function() {
-            $('#mobile-menu__sub-1').removeClass('active');
-            $('#mobile-menu__sub-5-2').addClass('active');
+            $($menu).addClass('active');
         });
     });
 })(jQuery);
@@ -115,11 +80,7 @@ for (n=0; n < accPrice.length; n++)
 function returnDefault() {
     $('#mobile-menu__main').addClass('active');
     $('#mobile-menu__sub-1').removeClass('active');
-    $('#mobile-menu__sub-1-2').removeClass('active');
-    $('#mobile-menu__sub-2-2').removeClass('active');
-    $('#mobile-menu__sub-3-2').removeClass('active');
-    $('#mobile-menu__sub-4-2').removeClass('active');
-    $('#mobile-menu__sub-5-2').removeClass('active');
+    $('.sub-3').removeClass('active');
 }
 
 
