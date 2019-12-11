@@ -44,6 +44,7 @@ gulp.task('scripts', ['delJs'], function () {
 		// 'src/libs/datepicker.js',
 		'src/libs/jquery.event.move.js',
 		'src/libs/jquery.twentytwenty.js',
+		'src/libs/jquery.maskedinput.js',
 		// 'src/libs/slick.js',
 		// 'src/libs/scrolloverflow.js',
 		// 'src/libs/fullpage.js',
@@ -131,11 +132,19 @@ gulp.task('css', function () {
 		}));
 });
 
+gulp.task('files', function () {
+	return gulp.src('src/files/**/*.*')                  // перемещаем все файлы в build
+		.pipe(gulp.dest('build/files/'))
+		.pipe(browserSync.reload({                      // обновляем браузер на том же месте
+			stream:true
+		}));
+});
+
 gulp.task('delWatch', function () {
 	return del.sync('build');
 });
 
-gulp.task('watch', ['delWatch', 'browser-sync', 'css-libs', 'csv', 'img', 'views', 'mainjs', 'font', 'docs', 'css'], function () {
+gulp.task('watch', ['delWatch', 'browser-sync', 'css-libs', 'csv', 'img', 'views', 'mainjs', 'font', 'docs', 'css', 'files'], function () {
 	gulp.watch('src/sass/**/*.scss', ['sass']);
 	gulp.watch('src/pug/**/*.scss', ['sass_page']);
 	gulp.watch('src/**/*.html', browserSync.reload);
@@ -144,4 +153,4 @@ gulp.task('watch', ['delWatch', 'browser-sync', 'css-libs', 'csv', 'img', 'views
 	gulp.watch('src/images/**/*', ['img'], browserSync.reload);
 });
 
-gulp.task('build', ['delWatch', 'css-libs', 'csv', 'img', 'views', 'mainjs', 'font', 'docs', 'css']);
+gulp.task('build', ['delWatch', 'css-libs', 'csv', 'img', 'views', 'mainjs', 'font', 'docs', 'css', 'files']);

@@ -128,4 +128,35 @@ function returnDefault() {
 $(window).load(function() {
     $("#before-after").twentytwenty();
     $("#before-after-about").twentytwenty();
-})(jQuery);
+});
+
+//Маска ввода телефона
+$(document).ready(function() {
+    $(".phone-mask").mask("+7 (999) 999-99-99");
+});
+
+
+// Модальное окно
+function showModal() {
+    $('.modal-bg').fadeIn();
+    $('.send-form').fadeIn();
+}
+// открыть по кнопке
+$('.popup').click(function() {
+    showModal();
+});
+
+// закрыть на крестик
+$('.close-modal-btn').click(function() {
+    $('.modal-bg').fadeOut();
+    $('.send-form').fadeOut();
+});
+// закрыть по клику вне окна
+$(document).mouseup(function (e) {
+    var popup = $('.send-form');
+    // var popupQuestion = $('.modal-content');
+    if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+        $('.send-form').fadeOut();
+        $('.modal-bg').fadeOut();
+    }
+});

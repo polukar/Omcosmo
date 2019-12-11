@@ -1,0 +1,79 @@
+$text-color: #605458;
+$text-color-dark: #6F6266;
+$bg: #FFF2F7;
+$bg-dark: #938086;
+$white: #ffffff;
+
+.modal-bg {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 20000;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+.send-form {
+  display: none;
+  width: 90%;
+  max-width: 485px;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, - 50%);
+  background-color: $white;
+  padding: 87px 45px 45px;
+  border-radius: 5px;
+  border: 1px solid $text-color-dark;
+  .input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $text-color-dark;
+    margin-bottom: 56px;
+    &::placeholder {
+      font-size: 14px;
+      font-style: italic;
+      color: $bg-dark;
+    }
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+  .btn-pink {
+    background-color: $bg;
+    color: $text-color;
+    transition: .3s ease-in-out;
+    &:hover {
+      color: $white;
+      background-color: $bg-dark;
+    }
+  }
+  .close-modal-btn {
+    width: 26px;
+    height: 26px;
+    background-color: $bg;
+    position: absolute;
+    top: 20px;
+    right: 32px;
+    cursor: pointer;
+    span {
+      display: block;
+      position: absolute;
+      top: 12px;
+      left: 3px;
+      width: 20px;
+      height: 2px;
+      background-color: $text-color;
+    }
+    span:first-child {
+      transform: rotateZ(45deg);
+    }
+    span:last-child {
+      transform: rotateZ(-45deg);
+    }
+  }
+}

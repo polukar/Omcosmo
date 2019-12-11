@@ -795,6 +795,9 @@ $white: #ffffff;
 
 //About
 .about {
+  a {
+    text-decoration: none;
+  }
   .about__headline {
     position: relative;
   }
@@ -1626,6 +1629,9 @@ $white: #ffffff;
       font-weight: normal;
       font-size: 14px;
     }
+  }
+  input:first-child {
+    margin-bottom: 20px;
   }
 }
 
